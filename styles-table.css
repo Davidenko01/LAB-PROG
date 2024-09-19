@@ -1,0 +1,132 @@
+
+*  {
+    /*
+    border: solid 1px black;
+    */
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
+    background-size: cover;
+    background-repeat: round;
+    
+    
+}
+table {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-collapse: collapse;
+    width: 750px;
+}
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+th {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+td {
+  border-bottom: 1px dashed white;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+    color: white;
+  }
+
+.team-name {
+    text-align: left;
+    border-left: 1px dashed white;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    margin: 0 0 20px 0;
+  }
+  
+  /* Navbar links */
+  .nav-bar a, .nav-bar button {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #logo-fai {
+    float: right;
+    width: 44px;
+    height: 44px;
+  }
+
+  .menu {
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Navbar links on mouse-over */
+  .nav-bar a:hover, .nav-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; /* se posiciona con respecto al navegador */
+    z-index: 1; /* indica jerarquia de elementos superpuestos*/
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover, .sidenav .closebtn:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: #f1f1f1;
+    border: none;
+  }
+
+  .sidenav ul, .nav-bar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  span {
+    font-size:30px;
+    cursor:pointer;
+  }
