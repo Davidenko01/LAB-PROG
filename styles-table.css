@@ -4,6 +4,7 @@
     border: solid 1px black;
     */
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -13,37 +14,55 @@ body {
     
     
 }
-table {
+#tabla-pos {
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-spacing: 0;
+    border: none;
+    border-radius: 13px;
     width: 750px;
 }
-.contenedor-tabla {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
+
+tr:nth-child(even) {
+  background-color: #f2f2f221;
+}
+
 
 th {
-    background-color: rgba(0, 0, 0, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 td {
-  border-bottom: 1px dashed white;
+  border-top: 1px dashed rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 th, td {
     text-align: center;
-    padding: 16px;
+    padding: 8px;
     color: white;
   }
 
 .team-name {
     text-align: left;
-    border-left: 1px dashed white;
 }
+
+#tabla-pos tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#tabla-pos tbody tr:first-child td {
+  border-top: none;
+}
+
+#tabla-pos thead tr th:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+ }
+
+#tabla-pos tbody tr td:not(:last-child) {
+ border-right: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
 
 .nav-bar {
     width: 100%;
