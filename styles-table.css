@@ -10,10 +10,18 @@
 body {
     background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
     background-size: cover;
-    background-repeat: round;
-    
-    
+    background-repeat: round;    
 }
+
+.portada {
+  margin: 0 auto;
+}
+
+.portada img {
+  height: 20%;
+  width: 20%;
+}
+
 #tabla-pos {
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -23,10 +31,13 @@ body {
     width: 750px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: #f2f2f221;
 }
 
+#header-tabla {
+  background-color: transparent;
+}
 
 th {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -39,7 +50,7 @@ td {
 
 th, td {
     text-align: center;
-    padding: 8px;
+    padding: 6px;
     color: white;
   }
 
@@ -63,12 +74,12 @@ th, td {
  border-right: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
-
 .nav-bar {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
     margin: 0 0 20px 0;
+    border-radius: 10px;
   }
   
   /* Navbar links */

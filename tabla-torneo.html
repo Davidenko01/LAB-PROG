@@ -7,14 +7,14 @@
   <title>FAI-GOL</title>
   <link rel="stylesheet" href="styles-table.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="./Fotos/logo.png" type="image/x-icon" sizes="16x16">
+  <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
 </head>
 
 <body>
   <nav class="sidenav" id="mySidenav">
     <ul>
       <li><button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a></li>
-      <li><a href="">Liga Argentina</a></li>
+      <li><a class = "active" href="">Liga Argentina</a></li>
       <li><a href="">Premier League</a></li>
       <li><a href="">Serie A Italia</a></li>
       <li><a href="">La Liga</a></li>
@@ -27,16 +27,19 @@
       <li><button class="menu" type="button" onclick="openNav()"><i class="fa fa-bars"></i></button></li>
       <li><a href=""><i class="fa fa-users"></i> SOBRE NOSOTROS</a></li>
       <li><a href=""><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
-      <li><img src="./Fotos/logo.png" id=logo-fai alt="Logo FAI" /></li>
+      <li><img src="./Fotos/newlogo.png" id=logo-fai alt="Logo FAI" /></li>
     </ul>
 
   </nav>
 
+  <div class="portada">
+    <img src="./Fotos/lpfa.png">
+  </div>
 
   <section>
       <table id="tabla-pos">
-        <thead class = "header-tabla">
-          <tr>
+        <thead>
+          <tr id = "header-tabla">
             <th><abbr>Pos</abbr></th>
             <th>Equipo</th>
             <th><abbr>Pts</abbr></th>
