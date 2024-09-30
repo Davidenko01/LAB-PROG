@@ -3,7 +3,7 @@ function crearTablaPosiciones() {
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        const tabla = document.getElementById('tabla-pos').getElementsByTagName('tbody')[0];
+        const tabla = document.getElementById('body-table');
         
         data.positions.forEach((equipo, index) => {
             const fila = tabla.insertRow();
@@ -12,10 +12,11 @@ function crearTablaPosiciones() {
             celdaPosicion.textContent = index+1;
 
             const celdaEquipo = fila.insertCell();
+            celdaEquipo.className = "team-name";
             celdaEquipo.textContent = equipo.team;
 
             const celdaPts = fila.insertCell();
-            celdaPts = celdaPts = equipo.pts;
+            celdaPts.textContent = equipo.pts;
 
             const celdaPJ = fila.insertCell();
             celdaPJ.textContent = equipo.pj;
