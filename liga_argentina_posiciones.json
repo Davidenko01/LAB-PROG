@@ -1,0 +1,312 @@
+{
+    "positions": [
+        {
+            "team": "V\u00e9lez",
+            "pts": 33,
+            "pj": 15,
+            "pg": 10,
+            "pe": 3,
+            "pp": 2,
+            "gf": 29,
+            "gc": 8,
+            "dif": 21
+        },
+        {
+            "team": "Talleres (C)",
+            "pts": 30,
+            "pj": 16,
+            "pg": 9,
+            "pe": 3,
+            "pp": 4,
+            "gf": 29,
+            "gc": 16,
+            "dif": 13
+        },
+        {
+            "team": "Hurac\u00e1n",
+            "pts": 28,
+            "pj": 16,
+            "pg": 8,
+            "pe": 4,
+            "pp": 4,
+            "gf": 27,
+            "gc": 19,
+            "dif": 8
+        },
+        {
+            "team": "Uni\u00f3n",
+            "pts": 27,
+            "pj": 16,
+            "pg": 8,
+            "pe": 3,
+            "pp": 5,
+            "gf": 24,
+            "gc": 18,
+            "dif": 6
+        },
+        {
+            "team": "Instituto",
+            "pts": 25,
+            "pj": 16,
+            "pg": 7,
+            "pe": 4,
+            "pp": 5,
+            "gf": 20,
+            "gc": 13,
+            "dif": 7
+        },
+        {
+            "team": "Atl\u00e9tico Tucum\u00e1n",
+            "pts": 24,
+            "pj": 16,
+            "pg": 6,
+            "pe": 6,
+            "pp": 4,
+            "gf": 21,
+            "gc": 14,
+            "dif": 7
+        },
+        {
+            "team": "River Plate",
+            "pts": 24,
+            "pj": 16,
+            "pg": 7,
+            "pe": 3,
+            "pp": 6,
+            "gf": 20,
+            "gc": 19,
+            "dif": 1
+        },
+        {
+            "team": "Racing Club",
+            "pts": 24,
+            "pj": 16,
+            "pg": 6,
+            "pe": 6,
+            "pp": 4,
+            "gf": 25,
+            "gc": 30,
+            "dif": -5
+        },
+        {
+            "team": "Belgrano",
+            "pts": 24,
+            "pj": 16,
+            "pg": 6,
+            "pe": 6,
+            "pp": 4,
+            "gf": 19,
+            "gc": 17,
+            "dif": 2
+        },
+        {
+            "team": "Riestra",
+            "pts": 24,
+            "pj": 16,
+            "pg": 6,
+            "pe": 6,
+            "pp": 4,
+            "gf": 14,
+            "gc": 12,
+            "dif": 2
+        },
+        {
+            "team": "Gimnasia (LP)",
+            "pts": 24,
+            "pj": 16,
+            "pg": 7,
+            "pe": 3,
+            "pp": 6,
+            "gf": 22,
+            "gc": 20,
+            "dif": 2
+        },
+        {
+            "team": "Boca Juniors",
+            "pts": 21,
+            "pj": 16,
+            "pg": 6,
+            "pe": 3,
+            "pp": 7,
+            "gf": 16,
+            "gc": 18,
+            "dif": -2
+        },
+        {
+            "team": "Estudiantes (LP)",
+            "pts": 20,
+            "pj": 16,
+            "pg": 5,
+            "pe": 5,
+            "pp": 6,
+            "gf": 16,
+            "gc": 16,
+            "dif": 0
+        },
+        {
+            "team": "Rosario Central",
+            "pts": 19,
+            "pj": 15,
+            "pg": 4,
+            "pe": 7,
+            "pp": 4,
+            "gf": 16,
+            "gc": 15,
+            "dif": 1
+        },
+        {
+            "team": "Godoy Cruz",
+            "pts": 19,
+            "pj": 15,
+            "pg": 4,
+            "pe": 7,
+            "pp": 4,
+            "gf": 15,
+            "gc": 14,
+            "dif": 1
+        },
+        {
+            "team": "Platense",
+            "pts": 19,
+            "pj": 15,
+            "pg": 5,
+            "pe": 4,
+            "pp": 6,
+            "gf": 11,
+            "gc": 14,
+            "dif": -3
+        },
+        {
+            "team": "Lan\u00fas",
+            "pts": 19,
+            "pj": 15,
+            "pg": 5,
+            "pe": 4,
+            "pp": 6,
+            "gf": 18,
+            "gc": 22,
+            "dif": -4
+        },
+        {
+            "team": "Independiente Rivadavia",
+            "pts": 18,
+            "pj": 15,
+            "pg": 5,
+            "pe": 3,
+            "pp": 7,
+            "gf": 16,
+            "gc": 22,
+            "dif": -6
+        },
+        {
+            "team": "Independiente",
+            "pts": 18,
+            "pj": 15,
+            "pg": 5,
+            "pe": 3,
+            "pp": 7,
+            "gf": 19,
+            "gc": 20,
+            "dif": -1
+        },
+        {
+            "team": "Argentinos Juniors",
+            "pts": 18,
+            "pj": 15,
+            "pg": 5,
+            "pe": 3,
+            "pp": 7,
+            "gf": 19,
+            "gc": 20,
+            "dif": -1
+        },
+        {
+            "team": "San Lorenzo",
+            "pts": 18,
+            "pj": 16,
+            "pg": 5,
+            "pe": 3,
+            "pp": 8,
+            "gf": 15,
+            "gc": 18,
+            "dif": -3
+        },
+        {
+            "team": "Tigre",
+            "pts": 17,
+            "pj": 15,
+            "pg": 4,
+            "pe": 5,
+            "pp": 6,
+            "gf": 13,
+            "gc": 16,
+            "dif": -3
+        },
+        {
+            "team": "Banfield",
+            "pts": 17,
+            "pj": 15,
+            "pg": 4,
+            "pe": 5,
+            "pp": 6,
+            "gf": 14,
+            "gc": 19,
+            "dif": -5
+        },
+        {
+            "team": "Newell's",
+            "pts": 16,
+            "pj": 15,
+            "pg": 4,
+            "pe": 4,
+            "pp": 7,
+            "gf": 16,
+            "gc": 24,
+            "dif": -8
+        },
+        {
+            "team": "Central C\u00f3rdoba (SdE)",
+            "pts": 16,
+            "pj": 16,
+            "pg": 4,
+            "pe": 4,
+            "pp": 8,
+            "gf": 14,
+            "gc": 22,
+            "dif": -8
+        },
+        {
+            "team": "Sarmiento (J)",
+            "pts": 15,
+            "pj": 15,
+            "pg": 4,
+            "pe": 3,
+            "pp": 8,
+            "gf": 11,
+            "gc": 22,
+            "dif": -11
+        },
+        {
+            "team": "Defensa y Justicia",
+            "pts": 15,
+            "pj": 15,
+            "pg": 4,
+            "pe": 3,
+            "pp": 8,
+            "gf": 8,
+            "gc": 21,
+            "dif": -13
+        },
+        {
+            "team": "Barracas Central",
+            "pts": 11,
+            "pj": 16,
+            "pg": 2,
+            "pe": 5,
+            "pp": 9,
+            "gf": 15,
+            "gc": 29,
+            "dif": -14
+        }
+    ]
+}
