@@ -1,5 +1,4 @@
-function crearTablaPosiciones() {
-    const url = 'liga_argentina_posiciones.json'; 
+function crearTablaPosiciones(url) {
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -7,6 +6,7 @@ function crearTablaPosiciones() {
         
         data.positions.forEach((equipo, index) => {
             const fila = tabla.insertRow();
+            fila.onclick = () => window.open('index.html', '_self');
 
             const celdaPosicion = fila.insertCell();
             celdaPosicion.textContent = index+1;
@@ -45,4 +45,17 @@ function crearTablaPosiciones() {
     });
     
 }
-crearTablaPosiciones();
+
+let urlParams = new URLSearchParams(window.location.search);
+let liga = urlParams.get('liga');
+let anchor;
+switch(liga) {
+    case 'pl':  crearTablaPosiciones('premier-league.json')
+    anchor = document.getElementById('premier');
+    anchor.className = "active";
+    ;break;
+    default: crearTablaPosiciones('liga_argentina_posiciones.json')
+    anchor = document.getElementById('lpfa');
+    anchor.className = "active";
+    ;break;
+}

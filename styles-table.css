@@ -37,12 +37,20 @@ body {
     width: 750px;
 }
 
+tbody tr { 
+  cursor: pointer;
+}
+
 tr:nth-child(odd) {
-  background-color: #f2f2f221;
+  background-color: #94e99121;
 }
 
 #header-tabla {
   background-color: transparent;
+}
+
+tbody tr:hover {
+  background-color:rgba(234, 47, 18, 0.249);
 }
 
 th {

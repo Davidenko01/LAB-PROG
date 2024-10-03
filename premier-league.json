@@ -1,0 +1,225 @@
+{
+    "positions": [
+      {
+        "team": "Liverpool",
+        "pts": 15,
+        "pj": 6,
+        "pg": 5,
+        "pe": 1,
+        "pp": 0,
+        "gf": 12,
+        "gc": 10,
+        "dif": 2
+      },
+      {
+        "team": "Manchester City",
+        "pts": 14,
+        "pj": 6,
+        "pg": 4,
+        "pe": 2,
+        "pp": 0,
+        "gf": 14,
+        "gc": 8,
+        "dif": 6
+      },
+      {
+        "team": "Arsenal",
+        "pts": 14,
+        "pj": 6,
+        "pg": 4,
+        "pe": 2,
+        "pp": 0,
+        "gf": 12,
+        "gc": 7,
+        "dif": 5
+      },
+      {
+        "team": "Chelsea",
+        "pts": 13,
+        "pj": 6,
+        "pg": 4,
+        "pe": 1,
+        "pp": 1,
+        "gf": 15,
+        "gc": 7,
+        "dif": 8
+      },
+      {
+        "team": "Aston Villa",
+        "pts": 13,
+        "pj": 6,
+        "pg": 4,
+        "pe": 1,
+        "pp": 1,
+        "gf": 12,
+        "gc": 9,
+        "dif": 3
+      },
+      {
+        "team": "Fulham",
+        "pts": 11,
+        "pj": 6,
+        "pg": 3,
+        "pe": 2,
+        "pp": 1,
+        "gf": 10,
+        "gc": 6,
+        "dif": 4
+      },
+      {
+        "team": "Newcastle",
+        "pts": 11,
+        "pj": 6,
+        "pg": 3,
+        "pe": 1,
+        "pp": 2,
+        "gf": 12,
+        "gc": 7,
+        "dif": 5
+      },
+      {
+        "team": "Tottenham",
+        "pts": 10,
+        "pj": 6,
+        "pg": 3,
+        "pe": 1,
+        "pp": 2,
+        "gf": 12,
+        "gc": 7,
+        "dif": 5
+      },
+      {
+        "team": "Brighton",
+        "pts": 9,
+        "pj": 6,
+        "pg": 2,
+        "pe": 3,
+        "pp": 1,
+        "gf": 10,
+        "gc": 8,
+        "dif": 2
+      },
+      {
+        "team": "Nottingham F.",
+        "pts": 9,
+        "pj": 6,
+        "pg": 2,
+        "pe": 3,
+        "pp": 1,
+        "gf": 6,
+        "gc": 5,
+        "dif": 1
+      },
+      {
+        "team": "Bournemouth",
+        "pts": 8,
+        "pj": 6,
+        "pg": 2,
+        "pe": 2,
+        "pp": 2,
+        "gf": 8,
+        "gc": 9,
+        "dif": -1
+      },
+      {
+        "team": "Brentford",
+        "pts": 8,
+        "pj": 6,
+        "pg": 2,
+        "pe": 2,
+        "pp": 2,
+        "gf": 10,
+        "gc": 10,
+        "dif": 0
+      },
+      {
+        "team": "Manchester U.",
+        "pts": 7,
+        "pj": 6,
+        "pg": 2,
+        "pe": 1,
+        "pp": 3,
+        "gf": 5,
+        "gc": 8,
+        "dif": -3
+      },
+      {
+        "team": "West Ham",
+        "pts": 5,
+        "pj": 6,
+        "pg": 1,
+        "pe": 2,
+        "pp": 3,
+        "gf": 10,
+        "gc": 14,
+        "dif": -4
+      },
+      {
+        "team": "Ipswich",
+        "pts": 4,
+        "pj": 6,
+        "pg": 0,
+        "pe": 4,
+        "pp": 2,
+        "gf": 10,
+        "gc": 15,
+        "dif": -5
+      },
+      {
+        "team": "Everton",
+        "pts": 4,
+        "pj": 6,
+        "pg": 1,
+        "pe": 1,
+        "pp": 4,
+        "gf": 15,
+        "gc": 8,
+        "dif": 7
+      },
+      {
+        "team": "Leicester City",
+        "pts": 3,
+        "pj": 6,
+        "pg": 0,
+        "pe": 3,
+        "pp": 3,
+        "gf": 12,
+        "gc": 16,
+        "dif": -4
+      },
+      {
+        "team": "Crystal Palace",
+        "pts": 3,
+        "pj": 6,
+        "pg": 0,
+        "pe": 3,
+        "pp": 3,
+        "gf": 6,
+        "gc": 14,
+        "dif": -8
+      },
+      {
+        "team": "Southampton",
+        "pts": 3,
+        "pj": 6,
+        "pg": 0,
+        "pe": 3,
+        "pp": 3,
+        "gf": 5,
+        "gc": 13,
+        "dif": -8
+      },
+      {
+        "team": "Wolves",
+        "pts": 1,
+        "pj": 6,
+        "pg": 0,
+        "pe": 1,
+        "pp": 5,
+        "gf": 16,
+        "gc": 10,
+        "dif": -10
+      }
+    ]
+  }
+  
