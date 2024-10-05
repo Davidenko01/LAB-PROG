@@ -58,12 +58,19 @@ body {
 }
 
 .datos a {
+  display: flex;
   color: white;
   text-decoration: none;
+  padding: 10px;
   margin: 0 15px;
   font-size: 13px;
   font-weight:lighter;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+a:hover{
+  background-color: rgba(140, 245, 165, 0.563);
 }
 
 #tabla-pos {
@@ -88,7 +95,7 @@ tr:nth-child(odd) {
 }
 
 tbody tr:hover {
-  background-color:rgba(234, 47, 18, 0.249);
+  background-color:rgba(140, 245, 165, 0.563);
 }
 
 th {
