@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.selected-team, .rival-team {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.next-match-info, .date-stadium {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+.match-results {
+    margin-top: 20px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-score {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
