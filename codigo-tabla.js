@@ -54,6 +54,14 @@ switch(liga) {
     anchor = document.getElementById('premier');
     anchor.className = "active";
     ;break;
+    case 'pb': crearTablaPosiciones('primera-b.json')
+    anchor = document.getElementById('primerab');
+    anchor.className = "active";
+    ;break;
+    case 'll': crearTablaPosiciones('la-liga.json')
+    anchor = document.getElementById('laliga');
+    anchor.className = "active";
+    ;break;
     default: crearTablaPosiciones('liga_argentina_posiciones.json')
     anchor = document.getElementById('lpfa');
     anchor.className = "active";
