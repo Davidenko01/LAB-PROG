@@ -15,6 +15,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+th {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -46,23 +51,36 @@ h2 {
 
 .match-results {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .match {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 54px;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.team-score {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
+.score, .team-name {
     font-size: 1.8em;
     font-weight: bold;
     text-align: center;
+}
+
+.team-name {
+    width: 25%;
+}
+
+table {
+    width: 760px;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid rgba(94, 82, 82, 0.432);
 }
 
 

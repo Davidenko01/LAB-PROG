@@ -628,6 +628,94 @@
               "opponent": "Argentinos Juniors",
               "stadium": "Estadio Diego Armando Maradona"
             }
+          },{
+            "name": "Estudiantes (LP)",
+            "last_5_matches": [
+              {
+                "opponent": "River Plate",
+                "team_score": 2,
+                "opponent_score": 2,
+                "date": "Sunday, September 30, 2024 5:30 PM",
+                "stadium": "Estadio Monumental"
+              },
+              {
+                "opponent": "Unión",
+                "team_score": 1,
+                "opponent_score": 0,
+                "date": "Thursday, September 21, 2024 7:45 PM",
+                "stadium": "Estadio 15 de Abril"
+              },
+              {
+                "opponent": "Platense",
+                "team_score": 3,
+                "opponent_score": 1,
+                "date": "Sunday, September 17, 2024 6:30 PM",
+                "stadium": "Estadio Ciudad de Vicente López"
+              },
+              {
+                "opponent": "Argentinos Juniors",
+                "team_score": 1,
+                "opponent_score": 2,
+                "date": "Monday, September 4, 2024 9:00 PM",
+                "stadium": "Estadio Diego Armando Maradona"
+              },
+              {
+                "opponent": "Racing Club",
+                "team_score": 2,
+                "opponent_score": 1,
+                "date": "Saturday, August 26, 2024 8:00 PM",
+                "stadium": "Estadio Presidente Perón"
+              }
+            ],
+            "next_match": {
+              "date": "Sunday, October 8, 2024 4:00 PM",
+              "opponent": "San Lorenzo",
+              "stadium": "Estadio Alberto J. Armando"
+            }
+          },{
+            "name": "Rosario Central",
+            "last_5_matches": [
+              {
+                "opponent": "Independiente",
+                "team_score": 1,
+                "opponent_score": 1,
+                "date": "Friday, September 29, 2024 8:00 PM",
+                "stadium": "Estadio Mario Alberto Kempes"
+              },
+              {
+                "opponent": "Huracán",
+                "team_score": 2,
+                "opponent_score": 2,
+                "date": "Thursday, September 21, 2024 7:45 PM",
+                "stadium": "Estadio Tomás Adolfo Ducó"
+              },
+              {
+                "opponent": "Atl Tucumán",
+                "team_score": 0,
+                "opponent_score": 1,
+                "date": "Monday, September 12, 2024 9:15 PM",
+                "stadium": "Estadio Monumental José Fierro"
+              },
+              {
+                "opponent": "Banfield",
+                "team_score": 2,
+                "opponent_score": 0,
+                "date": "Saturday, September 3, 2024 5:30 PM",
+                "stadium": "Estadio Florencio Sola"
+              },
+              {
+                "opponent": "Racing Club",
+                "team_score": 0,
+                "opponent_score": 1,
+                "date": "Tuesday, August 29, 2024 8:00 PM",
+                "stadium": "Estadio Presidente Perón"
+              }
+            ],
+            "next_match": {
+              "date": "Sunday, October 8, 2024 6:00 PM",
+              "opponent": "Lanús",
+              "stadium": "Estadio Malvinas Argentinas"
+            }
           }
       ]
     }

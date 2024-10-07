@@ -29,26 +29,26 @@ function crearFixture(url, equipo) {
         equipoRival.textContent = equipoEncontrado.next_match.opponent;
         matchInfo.appendChild(equipoRival);
 
-        //ACA VA LA PARTE DE LOS PROXIMOS PARTIDOS
-        const nextMatches = document.getElementsByClassName('match-results')[0];
+        //ACA VA LA PARTE DE LOS ANTERIORES PARTIDOS
+
+        //CREO LA FILA DEL PARTIDO
+        const nextMatches = document.getElementById('previous-matches-table');
         equipoEncontrado.last_5_matches.forEach(match => {
-            const partido = document.createElement('div');
+            const partido = nextMatches.insertRow();
             partido.className = 'match';
-            nextMatches.appendChild(partido);
 
-            const equipoSeleccionadoGoles = document.createElement('div');
-            equipoSeleccionadoGoles.className = 'team-score';
-            const goles = document.createElement('p');
-            const equipoS = document.createElement('p');
-            goles.className = 'score';
-            equipoS.className = 'team-name';
-            equipoS.textContent = equipo;
-            goles.textContent = match.team_score;
-            equipoSeleccionadoGoles.appendChild(equipoS);
-            equipoSeleccionadoGoles.appendChild(goles);
-            partido.appendChild(equipoSeleccionadoGoles);
+            //PONGO EL NOMBRE DEL EQUIPO SELECCIOANDO
+            const equipoSNombre = partido.insertCell();
+            equipoSNombre.className = 'team-name';
+            equipoSNombre.textContent = equipo;
 
-            const infoFechaEstadioProx = document.createElement('div');
+            //PONGO LOS GOLES DEL EQUIPO SELECCIONADO
+            const equipoSGoles = partido.insertCell();
+            equipoSGoles.className = 'score';
+            equipoSGoles.textContent = match.team_score;
+
+            //pongo datos de la fecha y el estadio
+            const infoFechaEstadioProx = partido.insertCell();
             infoFechaEstadioProx.className = 'date-stadium';
             const fechaProx = document.createElement('p');
             const estadioProx = document.createElement('p');
@@ -58,19 +58,16 @@ function crearFixture(url, equipo) {
             estadioProx.textContent = match.stadium
             infoFechaEstadioProx.appendChild(fechaProx);
             infoFechaEstadioProx.appendChild(estadioProx);
-            partido.appendChild(infoFechaEstadioProx);
 
-            const equipoRivalGoles = document.createElement('div');
-            equipoRivalGoles.className = 'team-score';
-            const golesR = document.createElement('p');
-            const equipoR = document.createElement('p');
-            golesR.className = 'score';
-            equipoR.className = 'team-name';
-            equipoR.textContent = match.opponent;
-            golesR.textContent = match.opponent_score;
-            equipoRivalGoles.appendChild(golesR);
-            equipoRivalGoles.appendChild(equipoR);
-            partido.appendChild(equipoRivalGoles);
+            //PONGO LOS GOLES DEL EQUIPO RIVAL
+            const equipoRGoles = partido.insertCell();
+            equipoRGoles.className = 'score';
+            equipoRGoles.textContent = match.opponent_score;
+
+            //PONGO EL NOMBRE DEL EQUIPO RIVAL
+            const equipoRNombre = partido.insertCell();
+            equipoRNombre.className = 'team-name';
+            equipoRNombre.textContent = match.opponent;
 
         });
     });
