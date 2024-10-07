@@ -1,0 +1,11 @@
+{
+    "pl": {
+        "imgSrc": "./Fotos/logo_pl.png",
+        "title": "Premier League"
+
+    },
+    "lpfa": {
+        "imgSrc": "./Fotos/logo_lpfa.png",
+        "title": "Primera División de Fútbol"
+    }
+}

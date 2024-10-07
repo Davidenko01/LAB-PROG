@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAI-GOL</title>
   <link rel="stylesheet" href="styles-table.css">
+  <link rel="stylesheet" href="styles-table-header.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
+
+  <script defer src="codigo-table-header.js"></script>
+  <script defer src="link-activo.js"></script>
 </head>
 
 <body>
   <nav class="sidenav" id="mySidenav">
     <ul>
       <li><button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a></li>
-      <li><a id="lpfa" href="tabla-torneo.html">Liga Argentina</a></li>
-      <li><a id = "premier" href="tabla-torneo.html?liga=pl">Premier League</a></li>
+      <li><a id="lpfa" href="tabla-torneo.html?liga=lpfa">Liga Argentina</a></li>
+      <li><a id="premier" href="tabla-torneo.html?liga=pl">Premier League</a></li>
       <li><a href="">Serie A Italia</a></li>
       <li><a href="">La Liga</a></li>
       <li><a href="">Bundesliga</a></li>
@@ -29,32 +33,55 @@
       <li><a href=""><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
       <li><img src="./Fotos/newlogo.png" id=logo-fai alt="Logo FAI" /></li>
     </ul>
-
   </nav>
 
-  <div class="portada">
-    <img src="./Fotos/lpfa.png">
-  </div>
+  <main>
+    <div class="table-header">
+      <div class="table-header__container">
+        <img id="table-header__img">
+        <h2 id="table-header__title"></h2>
+        <div id="table-header__info"></div>
+      </div>
+      <!-- <script src="codigo-table-header.js"></script> -->
+      <nav class="table-header__nav-bar">
+        <ul class="table-header__list">
+          <li class="table-header__item">
+            <a class="table-header__link table-header__link--active" href="#">tabla</a>
+          </li>
+          <li class="table-header__item">
+            <a class="table-header__link" href="#"
+              aria-label="enlace que dirige a la seccion de resultados">resultados</a>
+          </li>
+          <li class="table-header__item">
+            <a class="table-header__link" href="#"
+              aria-label="enlace que dirige a la seccion de proximos partidos">proximos
+              partidos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <table id="tabla-pos">
-    <thead>
-      <tr id="header-tabla">
-        <th><abbr>Pos</abbr></th>
-        <th>Equipo</th>
-        <th><abbr>Pts</abbr></th>
-        <th><abbr>PJ</abbr></th>
-        <th><abbr>PG</abbr></th>
-        <th><abbr>PE</abbr></th>
-        <th><abbr>PP</abbr></th>
-        <th><abbr>GF</abbr></th>
-        <th><abbr>GE</abbr></th>
-        <th><abbr>DIF</abbr></th>
-      </tr>
-    </thead>
-    <tbody id="body-table">
+    <table id="tabla-pos">
+      <thead>
+        <tr id="header-tabla">
+          <th><abbr>Pos</abbr></th>
+          <th>Equipo</th>
+          <th><abbr>Pts</abbr></th>
+          <th><abbr>PJ</abbr></th>
+          <th><abbr>PG</abbr></th>
+          <th><abbr>PE</abbr></th>
+          <th><abbr>PP</abbr></th>
+          <th><abbr>GF</abbr></th>
+          <th><abbr>GE</abbr></th>
+          <th><abbr>DIF</abbr></th>
+        </tr>
+      </thead>
+      <tbody id="body-table">
+      </tbody>
+    </table>
 
-    </tbody>
-  </table>
+  </main>
+
   <script src="codigo-tabla.js"></script>
   <script>
     function openNav() {
