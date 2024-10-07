@@ -7,5 +7,17 @@
     "lpfa": {
         "imgSrc": "./Fotos/logo_lpfa.png",
         "title": "Primera División de Fútbol"
+    },
+    "bl": {
+        "imgSrc": "./Fotos/logo_bl.png",
+        "title": "Bundesliga"
+    },
+    "ll": {
+        "imgSrc": "./Fotos/logo_ll.png",
+        "title": "LaLiga"
+    },
+    "sa": {
+        "imgSrc": "./Fotos/logo_sa.png",
+        "title": "Serie A"
     }
 }
