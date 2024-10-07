@@ -60,7 +60,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     text-align: center;
 }
