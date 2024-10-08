@@ -1,0 +1,225 @@
+{   "image": "https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2048x1152.png",
+    "tittle": "La Liga",
+    "positions": [
+        {
+            "team": "FC Barcelona",
+            "pts": 21,
+            "pj": 8,
+            "pg": 7,
+            "pe": 0,
+            "pp": 1,
+            "gf": 25,
+            "gc": 9,
+            "dif": 16
+        },
+        {
+            "team": "Real Madrid CF",
+            "pts": 18,
+            "pj": 7,
+            "pg": 6,
+            "pe": 0,
+            "pp": 1,
+            "gf": 17,
+            "gc": 6,
+            "dif": 11
+        },
+        {
+            "team": "Villarreal CF",
+            "pts": 18,
+            "pj": 8,
+            "pg": 5,
+            "pe": 3,
+            "pp": 0,
+            "gf": 18,
+            "gc": 7,
+            "dif": 11
+        },
+        {
+            "team": "Atl\u00e9tico Madrid",
+            "pts": 16,
+            "pj": 8,
+            "pg": 5,
+            "pe": 1,
+            "pp": 2,
+            "gf": 14,
+            "gc": 8,
+            "dif": 6
+        },
+        {
+            "team": "Athletic Bilbao",
+            "pts": 14,
+            "pj": 8,
+            "pg": 4,
+            "pe": 2,
+            "pp": 2,
+            "gf": 12,
+            "gc": 9,
+            "dif": 3
+        },
+        {
+            "team": "RCD Mallorca",
+            "pts": 14,
+            "pj": 8,
+            "pg": 4,
+            "pe": 2,
+            "pp": 2,
+            "gf": 11,
+            "gc": 9,
+            "dif": 2
+        },
+        {
+            "team": "CA Osasuna",
+            "pts": 13,
+            "pj": 8,
+            "pg": 4,
+            "pe": 1,
+            "pp": 3,
+            "gf": 12,
+            "gc": 13,
+            "dif": -1
+        },
+        {
+            "team": "Real Betis Balompi\u00e9",
+            "pts": 12,
+            "pj": 8,
+            "pg": 3,
+            "pe": 3,
+            "pp": 2,
+            "gf": 12,
+            "gc": 11,
+            "dif": 1
+        },
+        {
+            "team": "Rayo Vallecano",
+            "pts": 12,
+            "pj": 8,
+            "pg": 3,
+            "pe": 3,
+            "pp": 2,
+            "gf": 11,
+            "gc": 9,
+            "dif": 2
+        },
+        {
+            "team": "RC Celta de Vigo",
+            "pts": 10,
+            "pj": 8,
+            "pg": 3,
+            "pe": 1,
+            "pp": 4,
+            "gf": 9,
+            "gc": 9,
+            "dif": 0
+        },
+        {
+            "team": "Deportivo Alav\u00e9s",
+            "pts": 10,
+            "pj": 8,
+            "pg": 3,
+            "pe": 1,
+            "pp": 4,
+            "gf": 8,
+            "gc": 11,
+            "dif": -3
+        },
+        {
+            "team": "Girona FC",
+            "pts": 9,
+            "pj": 8,
+            "pg": 2,
+            "pe": 3,
+            "pp": 3,
+            "gf": 10,
+            "gc": 11,
+            "dif": -1
+        },
+        {
+            "team": "Sevilla FC",
+            "pts": 9,
+            "pj": 8,
+            "pg": 2,
+            "pe": 3,
+            "pp": 3,
+            "gf": 8,
+            "gc": 10,
+            "dif": -2
+        },
+        {
+            "team": "Real Sociedad",
+            "pts": 8,
+            "pj": 8,
+            "pg": 2,
+            "pe": 2,
+            "pp": 4,
+            "gf": 14,
+            "gc": 16,
+            "dif": -2
+        },
+        {
+            "team": "CD Legan\u00e9s",
+            "pts": 8,
+            "pj": 9,
+            "pg": 2,
+            "pe": 2,
+            "pp": 5,
+            "gf": 13,
+            "gc": 15,
+            "dif": -2
+        },
+        {
+            "team": "Getafe CF",
+            "pts": 8,
+            "pj": 9,
+            "pg": 2,
+            "pe": 2,
+            "pp": 5,
+            "gf": 12,
+            "gc": 16,
+            "dif": -4
+        },
+        {
+            "team": "RCD Espanyol Barcelona",
+            "pts": 7,
+            "pj": 8,
+            "pg": 2,
+            "pe": 1,
+            "pp": 5,
+            "gf": 8,
+            "gc": 14,
+            "dif": -6
+        },
+        {
+            "team": "Valencia CF",
+            "pts": 6,
+            "pj": 9,
+            "pg": 1,
+            "pe": 3,
+            "pp": 5,
+            "gf": 7,
+            "gc": 16,
+            "dif": -9
+        },
+        {
+            "team": "Real Valladolid",
+            "pts": 6,
+            "pj": 8,
+            "pg": 1,
+            "pe": 3,
+            "pp": 4,
+            "gf": 6,
+            "gc": 14,
+            "dif": -8
+        },
+        {
+            "team": "Las Palmas",
+            "pts": 3,
+            "pj": 8,
+            "pg": 0,
+            "pe": 3,
+            "pp": 5,
+            "gf": 6,
+            "gc": 19,
+            "dif": -13
+        }
+    ]
+}
