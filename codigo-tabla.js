@@ -57,7 +57,23 @@ switch(liga) {
     anchor = document.getElementById('premier');
     anchor.className = "active";
     ;break;
-    default: crearTablaPosiciones('liga_argentina_posiciones.json', 'lpfa')
+    case 'sa': crearTablaPosiciones('serie-A.json','pb')
+    anchor = document.getElementById('seriea');
+    anchor.className = "active";
+    ;break;
+    case 'll': crearTablaPosiciones('la-liga.json','ll')
+    anchor = document.getElementById('laliga');
+    anchor.className = "active";
+    ;break;
+    case 'bl': crearTablaPosiciones('bundesliga.json','bl')
+    anchor = document.getElementById('bundesliga');
+    anchor.className = "active";
+    ;break;
+    case 'pb': crearTablaPosiciones('primera-b.json','pb')
+    anchor = document.getElementById('primerab');
+    anchor.className = "active";
+    ;break;
+    default: crearTablaPosiciones('liga_argentina_posiciones.json','lpfa')
     anchor = document.getElementById('lpfa');
     anchor.className = "active";
     ;break;

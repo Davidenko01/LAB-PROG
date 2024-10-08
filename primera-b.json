@@ -1,0 +1,214 @@
+{   "image": "https://media.diariopopular.com.ar/p/b4c38f4e8aaa085f4fd1ac6330c0b32a/adjuntos/143/imagenes/008/116/0008116010/1200x675/smart/32ac722e7eaa45b6a3a87f3ade1b8c79e4a91ce0png.png",
+    "tittle": "Primera B Nacional", 
+    "positions": [
+        {
+            "team": "San Martín de Tucumán",
+            "pts": 73,
+            "pj": 34,
+            "pg": 22,
+            "pe": 5,
+            "pp": 7,
+            "gf": 36,
+            "gc": 14,
+            "dif": 22
+        },
+        {
+            "team": "San Martín de San Juan",
+            "pts": 64,
+            "pj": 34,
+            "pg": 17,
+            "pe": 7,
+            "pp": 10,
+            "gf": 33,
+            "gc": 14,
+            "dif": 22
+        },
+        {
+            "team": "Gimnasia Jujuy",
+            "pts": 51,
+            "pj": 34,
+            "pg": 13,
+            "pe": 9,
+            "pp": 12,
+            "gf": 29,
+            "gc": 24,
+            "dif": 5
+        },
+        {
+            "team": "Quilmes AC",
+            "pts": 50,
+            "pj": 34,
+            "pg": 14,
+            "pe": 11,
+            "pp": 9,
+            "gf": 33,
+            "gc": 23,
+            "dif": 10
+        },
+        {
+            "team": "CA San Miguel",
+            "pts": 50,
+            "pj": 34,
+            "pg": 14,
+            "pe": 10,
+            "pp": 10,
+            "gf": 32,
+            "gc": 31,
+            "dif": 1
+        },
+        {
+            "team": "Ferro Carril Oeste",
+            "pts": 48,
+            "pj": 34,
+            "pg": 12,
+            "pe": 10,
+            "pp": 12,
+            "gf": 50,
+            "gc": 41,
+            "dif": 9
+        },
+        {
+            "team": "CA All Boys",
+            "pts": 48,
+            "pj": 34,
+            "pg": 12,
+            "pe": 10,
+            "pp": 12,
+            "gf": 26,
+            "gc": 24,
+            "dif": 2
+        },
+        {
+            "team": "CA Estudiantes",
+            "pts": 47,
+            "pj": 34,
+            "pg": 11,
+            "pe": 9,
+            "pp": 14,
+            "gf": 28,
+            "gc": 29,
+            "dif": -1
+        },
+        {
+            "team": "Maipu",
+            "pts": 46,
+            "pj": 34,
+            "pg": 13,
+            "pe": 7,
+            "pp": 14,
+            "gf": 35,
+            "gc": 43,
+            "dif": -8
+        },
+        {
+            "team": "Agropecuario Argentino",
+            "pts": 45,
+            "pj": 34,
+            "pg": 12,
+            "pe": 9,
+            "pp": 13,
+            "gf": 39,
+            "gc": 36,
+            "dif": 3
+        },
+        {
+            "team": "Racing de Cordoba",
+            "pts": 45,
+            "pj": 34,
+            "pg": 12,
+            "pe": 9,
+            "pp": 13,
+            "gf": 29,
+            "gc": 29,
+            "dif": 0
+        },
+        {
+            "team": "CA Alvarado",
+            "pts": 45,
+            "pj": 34,
+            "pg": 13,
+            "pe": 9,
+            "pp": 12,
+            "gf": 29,
+            "gc": 34,
+            "dif": -5
+        },
+        {
+            "team": "Chacarita Juniors",
+            "pts": 40,
+            "pj": 34,
+            "pg": 10,
+            "pe": 14,
+            "pp": 10,
+            "gf": 40,
+            "gc": 40,
+            "dif": 0
+        },
+        {
+            "team": "Tristán Suárez",
+            "pts": 39,
+            "pj": 34,
+            "pg": 9,
+            "pe": 12,
+            "pp": 13,
+            "gf": 32,
+            "gc": 36,
+            "dif": -4
+        },
+        {
+            "team": "CA Guemes",
+            "pts": 38,
+            "pj": 34,
+            "pg": 8,
+            "pe": 14,
+            "pp": 12,
+            "gf": 26,
+            "gc": 31,
+            "dif": -5
+        },
+        {
+            "team": "Patronato Paraná",
+            "pts": 37,
+            "pj": 34,
+            "pg": 10,
+            "pe": 7,
+            "pp": 17,
+            "gf": 33,
+            "gc": 39,
+            "dif": -6
+        },
+        {
+            "team": "Talleres de Remedios",
+            "pts": 35,
+            "pj": 34,
+            "pg": 7,
+            "pe": 14,
+            "pp": 13,
+            "gf": 25,
+            "gc": 38,
+            "dif": -13
+        },
+        {
+            "team": "Arsenal de Sarandí",
+            "pts": 34,
+            "pj": 34,
+            "pg": 8,
+            "pe": 10,
+            "pp": 16,
+            "gf": 31,
+            "gc": 41,
+            "dif": -10
+        },
+        {
+            "team": "Guillermo Brown",
+            "pts": 32,
+            "pj": 34,
+            "pg": 7,
+            "pe": 11,
+            "pp": 16,
+            "gf": 25,
+            "gc": 35,
+            "dif": -10
+        }
+    ]
+}

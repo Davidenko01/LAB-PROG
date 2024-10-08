@@ -19,5 +19,10 @@
     "sa": {
         "imgSrc": "./Fotos/logo_sa.png",
         "title": "Serie A"
+    },
+    "pb": {
+        "imgSrc": "./Fotos/logo_pb.png",
+        "title": "Primera B Nacional"
     }
+
 }

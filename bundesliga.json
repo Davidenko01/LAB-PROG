@@ -1,0 +1,202 @@
+{
+  "positions": [
+    {
+      "team": "Bayern",
+      "pts": 14,
+      "pj": 6,
+      "pg": 4,
+      "pe": 2,
+      "pp": 0,
+      "gf": 20,
+      "gc": 7,
+      "dif": 13
+    },
+    {
+      "team": "RB Leipzig",
+      "pts": 14,
+      "pj": 6,
+      "pg": 4,
+      "pe": 2,
+      "pp": 0,
+      "gf": 19,
+      "gc": 7,
+      "dif": 12
+    },
+    {
+      "team": "Eintracht Frankfurt",
+      "pts": 13,
+      "pj": 6,
+      "pg": 4,
+      "pe": 1,
+      "pp": 1,
+      "gf": 12,
+      "gc": 6,
+      "dif": 6
+    },
+    {
+      "team": "SC Friburgo",
+      "pts": 12,
+      "pj": 6,
+      "pg": 4,
+      "pe": 0,
+      "pp": 2,
+      "gf": 12,
+      "gc": 6,
+      "dif": 6
+    },
+    {
+      "team": "Bayer Leverkusen",
+      "pts": 11,
+      "pj": 6,
+      "pg": 3,
+      "pe": 2,
+      "pp": 1,
+      "gf": 9,
+      "gc": 6,
+      "dif": 3
+    },
+    {
+      "team": "Union Berlin",
+      "pts": 11,
+      "pj": 6,
+      "pg": 3,
+      "pe": 2,
+      "pp": 1,
+      "gf": 8,
+      "gc": 6,
+      "dif": 2
+    },
+    {
+      "team": "Borussia Dortmund",
+      "pts": 10,
+      "pj": 6,
+      "pg": 3,
+      "pe": 1,
+      "pp": 2,
+      "gf": 12,
+      "gc": 8,
+      "dif": 4
+    },
+    {
+      "team": "Stuttgart",
+      "pts": 9,
+      "pj": 6,
+      "pg": 3,
+      "pe": 0,
+      "pp": 3,
+      "gf": 15,
+      "gc": 11,
+      "dif": 4
+    },
+    {
+      "team": "Heidenheim",
+      "pts": 9,
+      "pj": 6,
+      "pg": 3,
+      "pe": 0,
+      "pp": 3,
+      "gf": 12,
+      "gc": 11,
+      "dif": 1
+    },
+    {
+      "team": "FSV Mainz",
+      "pts": 8,
+      "pj": 6,
+      "pg": 2,
+      "pe": 2,
+      "pp": 2,
+      "gf": 10,
+      "gc": 9,
+      "dif": 1
+    },
+    {
+      "team": "Werder Bremen",
+      "pts": 8,
+      "pj": 6,
+      "pg": 2,
+      "pe": 2,
+      "pp": 2,
+      "gf": 8,
+      "gc": 6,
+      "dif": 2
+    },
+    {
+      "team": "VfL Wolfsburgo",
+      "pts": 7,
+      "pj": 6,
+      "pg": 2,
+      "pe": 1,
+      "pp": 3,
+      "gf": 7,
+      "gc": 9,
+      "dif": -2
+    },
+    {
+      "team": "FC Augsburg",
+      "pts": 7,
+      "pj": 6,
+      "pg": 2,
+      "pe": 1,
+      "pp": 3,
+      "gf": 8,
+      "gc": 16,
+      "dif": -8
+    },
+    {
+      "team": "M'gladbach",
+      "pts": 6,
+      "pj": 6,
+      "pg": 1,
+      "pe": 3,
+      "pp": 2,
+      "gf": 12,
+      "gc": 12,
+      "dif": 0
+    },
+    {
+      "team": "St. Pauli",
+      "pts": 6,
+      "pj": 6,
+      "pg": 1,
+      "pe": 3,
+      "pp": 2,
+      "gf": 8,
+      "gc": 9,
+      "dif": -1
+    },
+    {
+      "team": "TSG Hoffenheim",
+      "pts": 4,
+      "pj": 6,
+      "pg": 1,
+      "pe": 1,
+      "pp": 4,
+      "gf": 8,
+      "gc": 16,
+      "dif": -8
+    },
+    {
+      "team": "Holstein Kiel",
+      "pts": 4,
+      "pj": 6,
+      "pg": 1,
+      "pe": 1,
+      "pp": 4,
+      "gf": 9,
+      "gc": 19,
+      "dif": -10
+    },
+    {
+      "team": "VfL Bochum",
+      "pts": 1,
+      "pj": 6,
+      "pg": 0,
+      "pe": 1,
+      "pp": 5,
+      "gf": 6,
+      "gc": 14,
+      "dif": -8
+    }
+  ]
+}
