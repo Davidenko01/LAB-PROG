@@ -88,8 +88,9 @@ h1 {
   }
   
   /* Navbar links on mouse-over */
-  .nav-bar a:hover, .nav-bar button:hover {
+  .navbar a:hover, .navbar button:hover {
     background-color: rgba(255, 255, 255, 0.457);
+    cursor: pointer;
   }
   
   /* Current/active navbar link */
@@ -121,6 +122,7 @@ h1 {
   
   .sidenav a:hover, .sidenav .closebtn:hover {
     color: rgba(255, 255, 255, 0.5);
+    
   }
   
   .sidenav .closebtn {
@@ -132,6 +134,7 @@ h1 {
     background-color: transparent;
     color: #f1f1f1;
     border: none;
+    cursor: pointer;
   }
 
   .sidenav ul, .nav-bar ul {
