@@ -6,60 +6,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAI-GOL</title>
   <link rel="stylesheet" href="styles-table.css">
+  <link rel="stylesheet" href="styles-table-header.css">
+  <link rel="stylesheet" href="styles-layout.css">
+  <link rel="stylesheet" href="styles-modal.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
+
+  <script defer src="codigo-table-header.js"></script>
+  <script defer src="link-activo.js"></script>
 </head>
 
 <body>
-  <nav class="sidenav" id="mySidenav">
-    <ul>
-      <li><button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a></li>
-      <li><a id="lpfa" href="tabla-torneo.html">Liga Argentina</a></li>
-      <li><a id = "premier" href="tabla-torneo.html?liga=pl">Premier League</a></li>
-      <li><a id = "primerab" href="tabla-torneo.html?liga=pb">Primera B Nacional</a></li>
-      <li><a id = "laliga" href="tabla-torneo.html?liga=ll">La Liga</a></li>
-      <li><a href="">Bundesliga</a></li>
-    </ul>
-  </nav>
 
-  <nav class="nav-bar">
-    <ul>
-      <li><button class="menu" type="button" onclick="openNav()"><i class="fa fa-bars"></i></button></li>
-      <li><a href=""><i class="fa fa-users"></i> SOBRE NOSOTROS</a></li>
-      <li><a href=""><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
-      <li><img src="./Fotos/newlogo.png" id=logo-fai alt="Logo FAI" /></li>
-    </ul>
+  <header class="header">
+    <div class="header__container">
+      <img class="header__logo" src="Fotos/file.png" alt="Logo de la web football tables">
+      <h1>football tables</h1>
+    </div>
 
-  </nav>
+    <nav class="sidenav" id="mySidenav">
+      <ul>
+        <li><button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a></li>
+        <li><a id="lpfa" href="tabla-torneo.html?liga=lpfa">Liga Argentina</a></li>
+        <li><a id="premier" href="tabla-torneo.html?liga=pl">Premier League</a></li>
+        <li><a id="seriea" href="tabla-torneo.html?liga=sa">Serie A Italia</a></li>
+        <li><a id="laliga" href="tabla-torneo.html?liga=ll">La Liga</a></li>
+        <li><a id="bundesliga" href="tabla-torneo.html?liga=bl">Bundesliga</a></li>
+        <li><a id = "primerab" href="tabla-torneo.html?liga=pb">Primera B Nacional</a></li>
+      </ul>
+    </nav>
 
-  <div class = "portada">
-     <img src="./Fotos/lpfa.png">
-     <hr class="linea">
-     <div class="datos">
-      <a href="">RESULTADOS</a>
-      <a href="">PROXIMOS PARTIDOS</a>
-     </div> 
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li id="itemMenu"><button class="menu" type="button" onclick="openNav()"><i class="fa fa-bars"></i></button></li>
+        <button class="menu" id="myBtn">SOBRE NOSOTROS</button>
+        <li><a href=""><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="table-header">
+      <div class="table-header__container">
+        <img id="table-header__img">
+        <h2 id="table-header__title"></h2>
+        <div id="table-header__info"></div>
+      </div>
+      <!-- <script src="codigo-table-header.js"></script> -->
+      <nav class="table-header__nav-bar">
+        <ul class="table-header__list">
+          <li class="table-header__item">
+            <a class="table-header__link table-header__link--active" href="#">tabla</a>
+          </li>
+          <li class="table-header__item">
+            <a class="table-header__link" href="#"
+              aria-label="enlace que dirige a la seccion de resultados">resultados</a>
+          </li>
+          <li class="table-header__item">
+            <a class="table-header__link" href="#"
+              aria-label="enlace que dirige a la seccion de proximos partidos">proximos
+              partidos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <table id="tabla-pos">
+      <thead>
+        <tr id="header-tabla">
+          <th><abbr>Pos</abbr></th>
+          <th>Equipo</th>
+          <th><abbr>Pts</abbr></th>
+          <th><abbr>PJ</abbr></th>
+          <th><abbr>PG</abbr></th>
+          <th><abbr>PE</abbr></th>
+          <th><abbr>PP</abbr></th>
+          <th><abbr>GF</abbr></th>
+          <th><abbr>GE</abbr></th>
+          <th><abbr>DIF</abbr></th>
+        </tr>
+      </thead>
+      <tbody id="body-table">
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footer__list">
+        <li class="footer__item-label">football tables</li>
+        <li class="footer__item"><a class="footer__link" href="#">Condiciones de uso</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Políticas de Privacidad</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item-label">seguinos</li>
+        <li class="footer__item"><a class="footer__link" href="#">Facebook</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">X</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer__text">
+      Football Tables -  &#169 Copyright 2024-25
+    </div>
+   
+  </footer>
+
+  <div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>BORDE INTERNO</h2>
+      </div>
+      <div class="modal-body">
+        <p>Para los analistas de puntos, apasionados del juego o apostadores natos, ofrecemos un servicio completo donde pueden encontrar diversas ligas con las posiciones actualizadas. Además, brindamos información detallada sobre los últimos partidos de cada equipo y el próximo encuentro. </p>
+        <p> ¡Esperamos que disfruten de nuestra pagina!  </p>  
+      </div>  
+    </div>
+  
   </div>
 
-  <table id="tabla-pos">
-    <thead>
-      <tr id="header-tabla">
-        <th><abbr>Pos</abbr></th>
-        <th>Equipo</th>
-        <th><abbr>Pts</abbr></th>
-        <th><abbr>PJ</abbr></th>
-        <th><abbr>PG</abbr></th>
-        <th><abbr>PE</abbr></th>
-        <th><abbr>PP</abbr></th>
-        <th><abbr>GF</abbr></th>
-        <th><abbr>GE</abbr></th>
-        <th><abbr>DIF</abbr></th>
-      </tr>
-    </thead>
-    <tbody id="body-table">
 
-    </tbody>
-  </table>
+  <script src="stickyNavBar.js"></script>
   <script src="codigo-tabla.js"></script>
   <script>
     function openNav() {
@@ -70,6 +141,29 @@
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+
+<script>  
+  var modal = document.getElementById("myModal");
+  
+  var btn = document.getElementById("myBtn");
+  
+  var span = document.getElementsByClassName("close")[0];
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 </body>
 
 </html>

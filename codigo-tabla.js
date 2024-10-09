@@ -1,4 +1,4 @@
-function crearTablaPosiciones(url) {
+function crearTablaPosiciones(url, liga) {
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -6,7 +6,10 @@ function crearTablaPosiciones(url) {
         
         data.positions.forEach((equipo, index) => {
             const fila = tabla.insertRow();
-            fila.onclick = () => window.open('index.html', '_self');
+            fila.onclick = () => {
+                const nuevaURL = `fixture.html?liga=${liga}&equipo=${equipo.team}`;
+                window.open(nuevaURL, '_self');
+            };
 
             const celdaPosicion = fila.insertCell();
             celdaPosicion.textContent = index+1;
@@ -46,23 +49,31 @@ function crearTablaPosiciones(url) {
     
 }
 
-let urlParams = new URLSearchParams(window.location.search);
-let liga = urlParams.get('liga');
+const urlParams = new URLSearchParams(window.location.search);
+const liga = urlParams.get('liga');
 let anchor;
 switch(liga) {
-    case 'pl':  crearTablaPosiciones('premier-league.json')
+    case 'pl':  crearTablaPosiciones('premier-league.json', 'pl')
     anchor = document.getElementById('premier');
     anchor.className = "active";
     ;break;
-    case 'pb': crearTablaPosiciones('primera-b.json')
-    anchor = document.getElementById('primerab');
+    case 'sa': crearTablaPosiciones('serie-A.json','pb')
+    anchor = document.getElementById('seriea');
     anchor.className = "active";
     ;break;
-    case 'll': crearTablaPosiciones('la-liga.json')
+    case 'll': crearTablaPosiciones('la-liga.json','ll')
     anchor = document.getElementById('laliga');
     anchor.className = "active";
     ;break;
-    default: crearTablaPosiciones('liga_argentina_posiciones.json')
+    case 'bl': crearTablaPosiciones('bundesliga.json','bl')
+    anchor = document.getElementById('bundesliga');
+    anchor.className = "active";
+    ;break;
+    case 'pb': crearTablaPosiciones('primera-b.json','pb')
+    anchor = document.getElementById('primerab');
+    anchor.className = "active";
+    ;break;
+    default: crearTablaPosiciones('liga_argentina_posiciones.json','lpfa')
     anchor = document.getElementById('lpfa');
     anchor.className = "active";
     ;break;

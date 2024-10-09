@@ -1,0 +1,225 @@
+{
+    "positions": [
+      {
+        "team": "SSC Nápoles",
+        "pts": 16,
+        "pj": 7,
+        "pg": 5,
+        "pe": 1,
+        "pp": 1,
+        "gf": 14,
+        "gc": 5,
+        "dif": 9
+      },
+      {
+        "team": "Inter Milán",
+        "pts": 14,
+        "pj": 7,
+        "pg": 4,
+        "pe": 2,
+        "pp": 1,
+        "gf": 16,
+        "gc": 9,
+        "dif": 7
+      },
+      {
+        "team": "Juventus Turín",
+        "pts": 13,
+        "pj": 7,
+        "pg": 4,
+        "pe": 1,
+        "pp": 2,
+        "gf": 14,
+        "gc": 11,
+        "dif": 3
+      },
+      {
+        "team": "Lazio Roma",
+        "pts": 13,
+        "pj": 7,
+        "pg": 4,
+        "pe": 1,
+        "pp": 2,
+        "gf": 14,
+        "gc": 10,
+        "dif": 4
+      },
+      {
+        "team": "Udinese Calcio",
+        "pts": 13,
+        "pj": 7,
+        "pg": 4,
+        "pe": 1,
+        "pp": 2,
+        "gf": 10,
+        "gc": 5,
+        "dif": 5
+      },
+      {
+        "team": "AC Milán",
+        "pts": 11,
+        "pj": 7,
+        "pg": 3,
+        "pe": 2,
+        "pp": 2,
+        "gf": 7,
+        "gc": 7,
+        "dif": 0
+      },
+      {
+        "team": "Torino FC",
+        "pts": 11,
+        "pj": 7,
+        "pg": 3,
+        "pe": 2,
+        "pp": 2,
+        "gf": 12,
+        "gc": 12,
+        "dif": 0
+      },
+      {
+        "team": "Atalanta",
+        "pts": 10,
+        "pj": 7,
+        "pg": 3,
+        "pe": 1,
+        "pp": 3,
+        "gf": 13,
+        "gc": 10,
+        "dif": 3
+      },
+      {
+        "team": "AS Roma",
+        "pts": 10,
+        "pj": 7,
+        "pg": 3,
+        "pe": 1,
+        "pp": 3,
+        "gf": 8,
+        "gc": 5,
+        "dif": 3
+      },
+      {
+        "team": "Empoli",
+        "pts": 10,
+        "pj": 7,
+        "pg": 3,
+        "pe": 1,
+        "pp": 3,
+        "gf": 10,
+        "gc": 13,
+        "dif": -3
+      },
+      {
+        "team": "ACF Fiorentina",
+        "pts": 9,
+        "pj": 7,
+        "pg": 2,
+        "pe": 3,
+        "pp": 2,
+        "gf": 6,
+        "gc": 6,
+        "dif": 0
+      },
+      {
+        "team": "Hellas Verona",
+        "pts": 9,
+        "pj": 7,
+        "pg": 2,
+        "pe": 3,
+        "pp": 2,
+        "gf": 8,
+        "gc": 12,
+        "dif": -4
+      },
+      {
+        "team": "Bolonia FC",
+        "pts": 7,
+        "pj": 7,
+        "pg": 1,
+        "pe": 4,
+        "pp": 2,
+        "gf": 10,
+        "gc": 12,
+        "dif": -2
+      },
+      {
+        "team": "Como 1907",
+        "pts": 7,
+        "pj": 7,
+        "pg": 2,
+        "pe": 1,
+        "pp": 4,
+        "gf": 7,
+        "gc": 11,
+        "dif": -4
+      },
+      {
+        "team": "Cagliari Calcio",
+        "pts": 6,
+        "pj": 7,
+        "pg": 1,
+        "pe": 3,
+        "pp": 3,
+        "gf": 7,
+        "gc": 12,
+        "dif": -5
+      },
+      {
+        "team": "Parma Calcio",
+        "pts": 5,
+        "pj": 7,
+        "pg": 1,
+        "pe": 2,
+        "pp": 4,
+        "gf": 9,
+        "gc": 14,
+        "dif": -5
+      },
+      {
+        "team": "US Lecce",
+        "pts": 5,
+        "pj": 7,
+        "pg": 1,
+        "pe": 2,
+        "pp": 4,
+        "gf": 9,
+        "gc": 15,
+        "dif": -6
+      },
+      {
+        "team": "Génova CFC",
+        "pts": 5,
+        "pj": 7,
+        "pg": 1,
+        "pe": 2,
+        "pp": 4,
+        "gf": 5,
+        "gc": 15,
+        "dif": -10
+      },
+      {
+        "team": "Monza",
+        "pts": 4,
+        "pj": 7,
+        "pg": 1,
+        "pe": 1,
+        "pp": 5,
+        "gf": 9,
+        "gc": 15,
+        "dif": -6
+      },
+      {
+        "team": "Venezia",
+        "pts": 4,
+        "pj": 7,
+        "pg": 1,
+        "pe": 1,
+        "pp": 5,
+        "gf": 5,
+        "gc": 12,
+        "dif": -7
+      }
+    ]
+  }
+  
