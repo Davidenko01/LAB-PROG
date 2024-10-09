@@ -1,80 +1,78 @@
 function crearTablaPosiciones(url, liga) {
     fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        const tabla = document.getElementById('body-table');
-        
-        data.positions.forEach((equipo, index) => {
-            const fila = tabla.insertRow();
-            fila.onclick = () => {
-                const nuevaURL = `fixture.html?liga=${liga}&equipo=${equipo.team}`;
-                window.open(nuevaURL, '_self');
-            };
+        .then(response => response.json())
+        .then(data => {
+            const tabla = document.getElementById('body-table');
 
-            const celdaPosicion = fila.insertCell();
-            celdaPosicion.textContent = index+1;
+            data.positions.forEach((equipo, index) => {
+                const fila = tabla.insertRow();
+                fila.onclick = () => {
+                    const nuevaURL = `fixture.html?liga=${liga}&equipo=${equipo.team}`;
+                    window.open(nuevaURL, '_self');
+                };
 
-            const celdaEquipo = fila.insertCell();
-            celdaEquipo.className = "team-name";
-            celdaEquipo.textContent = equipo.team;
+                const celdaPosicion = fila.insertCell();
+                celdaPosicion.textContent = index + 1;
 
-            const celdaPts = fila.insertCell();
-            celdaPts.textContent = equipo.pts;
+                const celdaEquipo = fila.insertCell();
+                celdaEquipo.className = "team-name";
+                celdaEquipo.textContent = equipo.team;
 
-            const celdaPJ = fila.insertCell();
-            celdaPJ.textContent = equipo.pj;
+                const celdaPts = fila.insertCell();
+                celdaPts.textContent = equipo.pts;
 
-            const celdaPG = fila.insertCell();
-            celdaPG.textContent = equipo.pg;
+                const celdaPJ = fila.insertCell();
+                celdaPJ.textContent = equipo.pj;
 
-            const celdaPE = fila.insertCell();
-            celdaPE.textContent = equipo.pe;
+                const celdaPG = fila.insertCell();
+                celdaPG.textContent = equipo.pg;
 
-            const celdaPP = fila.insertCell();
-            celdaPP.textContent = equipo.pp;
+                const celdaPE = fila.insertCell();
+                celdaPE.textContent = equipo.pe;
 
-            const celdaGF = fila.insertCell();
-            celdaGF.textContent = equipo.gf;
+                const celdaPP = fila.insertCell();
+                celdaPP.textContent = equipo.pp;
 
-            const celdaGC = fila.insertCell();
-            celdaGC.textContent = equipo.gc;
+                const celdaGF = fila.insertCell();
+                celdaGF.textContent = equipo.gf;
 
-            const celdaDIF = fila.insertCell();
-            celdaDIF.textContent = equipo.dif;
+                const celdaGC = fila.insertCell();
+                celdaGC.textContent = equipo.gc;
+
+                const celdaDIF = fila.insertCell();
+                celdaDIF.textContent = equipo.dif;
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo JSON:', error);
         });
-    })
-    .catch(error => {
-        console.error('Error al cargar el archivo JSON:', error);
-    });
-    
+
 }
 
 const urlParams = new URLSearchParams(window.location.search);
 const liga = urlParams.get('liga');
 let anchor;
-switch(liga) {
-    case 'pl':  crearTablaPosiciones('premier-league.json', 'pl')
-    anchor = document.getElementById('premier');
-    anchor.className = "active";
-    ;break;
-    case 'sa': crearTablaPosiciones('serie-A.json','pb')
-    anchor = document.getElementById('seriea');
-    anchor.className = "active";
-    ;break;
-    case 'll': crearTablaPosiciones('la-liga.json','ll')
-    anchor = document.getElementById('laliga');
-    anchor.className = "active";
-    ;break;
-    case 'bl': crearTablaPosiciones('bundesliga.json','bl')
-    anchor = document.getElementById('bundesliga');
-    anchor.className = "active";
-    ;break;
-    case 'pb': crearTablaPosiciones('primera-b.json','pb')
-    anchor = document.getElementById('primerab');
-    anchor.className = "active";
-    ;break;
-    default: crearTablaPosiciones('liga_argentina_posiciones.json','lpfa')
-    anchor = document.getElementById('lpfa');
-    anchor.className = "active";
-    ;break;
-}
+    switch (liga) {
+        case 'pl': crearTablaPosiciones('premier-league.json', 'pl')
+            anchor = document.getElementById('premier');
+            ; break;
+        case 'sa': crearTablaPosiciones('serie-A.json', 'pb')
+            anchor = document.getElementById('seriea');
+
+            ; break;
+        case 'll': crearTablaPosiciones('la-liga.json', 'll')
+            anchor = document.getElementById('laliga');
+
+            ; break;
+        case 'bl': crearTablaPosiciones('bundesliga.json', 'bl')
+            anchor = document.getElementById('bundesliga');
+            ; break;
+        case 'pb': crearTablaPosiciones('primera-b.json', 'pb')
+            anchor = document.getElementById('primerab');
+        
+            ; break;
+        default: crearTablaPosiciones('liga_argentina_posiciones.json', 'lpfa')
+            anchor = document.getElementById('lpfa');
+            anchor.className = "active";
+            ; break;
+    }
