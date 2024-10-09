@@ -1,162 +1,163 @@
 
 *  {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
-    background-size: cover;
-    background-repeat: round;    
+  background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
+  background-size: cover;
+  background-repeat: round;    
 }
 
 /* -------------------- HEADER -------------------- */
 
 .header {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 80px; 
-  color: #eee;
+background-color: rgba(0, 0, 0, 0.5);
+margin-bottom: 80px; 
+color: #eee;
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #0005;
-  gap: 10px;
-  padding: 15px;
-  
+display: flex;
+align-items: center;
+border-bottom: 1px solid #0005;
+gap: 10px;
+padding: 15px;
+
 }
 
 .header__logo {
-  width: 70px;
-  margin-left: 10px;
-  object-fit: cover;
-  background-color: #eee;
-  border-radius: 15px;
+width: 70px;
+margin-left: 10px;
+object-fit: cover;
+background-color: #eee;
+border-radius: 15px;
 }
 
 h1 {
-  font-size: 28px;
-  text-transform: capitalize;
-  font-style: italic;
+font-size: 28px;
+text-transform: capitalize;
+font-style: italic;
 }
 
 /* ------------ NAV-BAR(sticky) ------------ */
 
 .navbar{
-  position:relative;
-  width: 100%;
-  color: white;
+position:relative;
+width: 100%;
+color: white;
 }
 
 .nav-bar a, button{
-  color: white;
-    text-decoration: none;
+color: white;
+  text-decoration: none;
 }
 
 .nav-bar ul{
-  list-style:none;
+list-style:none;
 }
 
 .navbar.sticky{
-  top:0;
-  position:fixed;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
+top:0;
+position:fixed;
+background-color: rgba(0, 0, 0, 0.8);
+width: 100%;
 }
 .navbar a, button{
 
-    display: block;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 .navbar ul{
-  list-style:none;
-  display: flex;
-  margin-left: 25px;
+list-style:none;
+display: flex;
+margin-left: 25px;
 }
 
-  .menu {
-    background-color: transparent;
-    border: none;
-  }
-  
-  /* Navbar links on mouse-over */
-  .nav-bar a:hover, .nav-bar button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
-  }
+.menu {
+  background-color: transparent;
+  border: none;
+}
 
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed; /* se posiciona con respecto al navegador */
-    z-index: 1; /* indica jerarquia de elementos superpuestos*/
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover, .sidenav .closebtn:hover {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 25px;
-    margin-left: 50px;
-    background-color: transparent;
-    color: #f1f1f1;
-    border: none;
-  }
+/* Navbar links on mouse-over */
+.nav-bar a:hover, .nav-bar button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
-  .sidenav ul, .nav-bar ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
 
-  span {
-    font-size:30px;
-    cursor:pointer;
-  }
-  /* ---------- FIN-NAV-BAR ---------- */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed; /* se posiciona con respecto al navegador */
+  z-index: 1; /* indica jerarquia de elementos superpuestos*/
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .sidenav .closebtn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 50px;
+  background-color: transparent;
+  color: #f1f1f1;
+  border: none;
+}
+
+.sidenav ul, .nav-bar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+span {
+  font-size:30px;
+  cursor:pointer;
+}
+/* ---------- FIN-NAV-BAR ---------- */
 
 /* ------------------ FIN-HEADER ------------------ */
 
 
 /* -------------------- TABLA -------------------- */
 #tabla-pos {
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-spacing: 0;
-  border: none;
-  border-radius: 13px;
-  width: 750px;
+margin: 0 auto;
+background-color: rgba(0, 0, 0, 0.5);
+border-spacing: 0;
+border: none;
+border-radius: 13px;
+width: 750px;
 }
 
 tbody tr { 
@@ -176,7 +177,7 @@ background-color:rgba(234, 47, 18, 0.249);
 }
 
 th {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 td {
@@ -185,13 +186,13 @@ border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 th, td {
-  text-align: center;
-  padding: 6px;
-  color: white;
+text-align: center;
+padding: 6px;
+color: white;
 }
 
 .team-name {
-  text-align: left;
+text-align: left;
 }
 
 #tabla-pos tbody tr:last-child td {
@@ -215,47 +216,47 @@ border-right: 1px dashed rgba(255, 255, 255, 0.5);
 /* -------------------- FOOTER --------------------- */
 
 .footer{
-  margin-top: 80px;
-  background-color:rgba(0, 0, 0, 0.5);
-  font-size: 13px;
-  color: #eee;
+margin-top: 80px;
+background-color:rgba(0, 0, 0, 0.5);
+font-size: 13px;
+color: #eee;
 }
 
 .footer__container{
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  padding: 40px;
+display: flex;
+justify-content: space-evenly;
+margin: auto;
+padding: 40px;
 }
 
 .footer__list{
-  list-style-type: none;  
+list-style-type: none;  
 }
 
 .footer__item-label{
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 10px;
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 10px;
 }
 
 .footer__link{
-  display: inline-block;
-  text-decoration: none;
-  margin: 6px 0;
-  color: inherit;
-  padding: 1px;
+display: inline-block;
+text-decoration: none;
+margin: 6px 0;
+color: inherit;
+padding: 1px;
 }
 
 .footer__link:hover{
-  text-decoration:underline;
-  color: revert;
+text-decoration:underline;
+color: revert;
 }
 
 .footer__text{
-  padding: 10px;
-  text-align: center;
-  border-top: 1px solid #0007;
+padding: 10px;
+text-align: center;
+border-top: 1px solid #0007;
 }
 
 /* ------------------- FIN-FOOTER ------------------ */
