@@ -1,5 +1,5 @@
- // Selecciona la barra de navegación
- const navbar = document.getElementById("navbar");
+//Modifica dinamicamente la navbar
+    const navbar = document.getElementById("navbar");
     const sticky = navbar.offsetTop; // Obtiene la posición inicial de la barra
 
     // Función que se ejecuta al hacer scroll
