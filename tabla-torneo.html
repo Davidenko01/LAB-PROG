@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles-table.css">
   <link rel="stylesheet" href="styles-table-header.css">
   <link rel="stylesheet" href="styles-layout.css">
+  <link rel="stylesheet" href="styles-modal.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
@@ -39,7 +40,7 @@
     <nav class="navbar" id="navbar">
       <ul>
         <li id="itemMenu"><button class="menu" type="button" onclick="openNav()"><i class="fa fa-bars"></i></button></li>
-        <li><a href=""><i class="fa fa-users"></i> SOBRE NOSOTROS</a></li>
+        <button class="menu" id="myBtn">SOBRE NOSOTROS</button>
         <li><a href=""><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
       </ul>
     </nav>
@@ -111,6 +112,24 @@
     </div>
    
   </footer>
+
+  <div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>BORDE INTERNO</h2>
+      </div>
+      <div class="modal-body">
+        <p>Para los analistas de puntos, apasionados del juego o apostadores natos, ofrecemos un servicio completo donde pueden encontrar diversas ligas con las posiciones actualizadas. Además, brindamos información detallada sobre los últimos partidos de cada equipo y el próximo encuentro. </p>
+        <p> ¡Esperamos que disfruten de nuestra pagina!  </p>  
+      </div>  
+    </div>
+  
+  </div>
+
+
   <script src="stickyNavBar.js"></script>
   <script src="codigo-tabla.js"></script>
   <script>
@@ -122,6 +141,29 @@
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+
+<script>  
+  var modal = document.getElementById("myModal");
+  
+  var btn = document.getElementById("myBtn");
+  
+  var span = document.getElementsByClassName("close")[0];
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 </body>
 
 </html>
