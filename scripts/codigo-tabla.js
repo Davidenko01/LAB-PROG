@@ -53,25 +53,25 @@ const urlParams = new URLSearchParams(window.location.search);
 const liga = urlParams.get('liga');
 let anchor;
     switch (liga) {
-        case 'pl': crearTablaPosiciones('premier-league.json', 'pl')
+        case 'pl': crearTablaPosiciones('../json/premier-league.json', 'pl')
             anchor = document.getElementById('premier');
             ; break;
-        case 'sa': crearTablaPosiciones('serie-A.json', 'pb')
+        case 'sa': crearTablaPosiciones('../json/serie-A.json', 'pb')
             anchor = document.getElementById('seriea');
 
             ; break;
-        case 'll': crearTablaPosiciones('la-liga.json', 'll')
+        case 'll': crearTablaPosiciones('../json/la-liga.json', 'll')
             anchor = document.getElementById('laliga');
 
             ; break;
-        case 'bl': crearTablaPosiciones('bundesliga.json', 'bl')
+        case 'bl': crearTablaPosiciones('../json/bundesliga.json', 'bl')
             anchor = document.getElementById('bundesliga');
             ; break;
-        case 'pb': crearTablaPosiciones('primera-b.json', 'pb')
+        case 'pb': crearTablaPosiciones('../json/primera-b.json', 'pb')
             anchor = document.getElementById('primerab');
         
             ; break;
-        default: crearTablaPosiciones('liga_argentina_posiciones.json', 'lpfa')
+        default: crearTablaPosiciones('../json/liga_argentina_posiciones.json', 'lpfa')
             anchor = document.getElementById('lpfa');
             anchor.className = "active";
             ; break;

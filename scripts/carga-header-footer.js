@@ -1,5 +1,5 @@
 // Cargar header
-fetch('header.html')
+fetch('../html/header.html')
     .then(response => response.text())
     .then(data => {
         document.querySelector('header').innerHTML = data;
@@ -7,7 +7,7 @@ fetch('header.html')
     .catch(error => console.log('Error al cargar el header:', error));
 
 // Cargar footer
-fetch('footer.html')
+fetch('../html/footer.html')
     .then(response => response.text())
     .then(data => {
         document.querySelector('footer').innerHTML = data;

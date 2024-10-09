@@ -1,6 +1,6 @@
 
 function cargarInfoLiga() {
-    fetch('ligas-info.json')
+    fetch('../json/ligas-info.json')
         .then(response => response.json())
         .then(ligasInfo => {
 
@@ -26,7 +26,7 @@ function cargarInfoLiga() {
            
             //provisorio, para que cargue tabla-torneo.hmtl
             if (!liga) {
-                imgElement.src = "./Fotos/logo_lpfa.png";
+                imgElement.src = "../Fotos/logo_lpfa.png";
                 titleElement.textContent = "Primera División de Fútbol";
                 infoElement.textContent = (String)(new Date().getFullYear());
             }

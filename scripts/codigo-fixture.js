@@ -79,6 +79,6 @@ const liga = urlParams.get('liga');
 const equipo = urlParams.get('equipo');
 let anchor;
 switch(liga) {
-    default: crearFixture('partidos.json', equipo);
+    default: crearFixture('../json/partidos.json', equipo);
     ;break;
 }
