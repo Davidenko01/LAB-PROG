@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="../styles/styles-fixture.css">
     <link rel="stylesheet" href="../styles/styles-modal.css">
 
-    <script defer src = "../scripts/carga-header-footer.js"></script>
+    <script defer src="../scripts/carga-header-footer.js"></script>
 </head>
 
 <body>
-    <header class = "header"></header>
-    <div class="container">
-        <header>
-            <h2>Next Match</h2>
-            <div class="match-info">
-                <!-- 
+    <header class="header"></header>
+
+    <main>
+        <div class="container">
+            <h2 class="title">Próximos partidos</h2>
+            <div class="next-matches">
+                
+                <div class="match-info">
+                    <!-- 
                 <div class="selected-team">Marseille</div>
                 <div class="next-match-info">
                     <p class="match-date">Friday, August 11, 2023 8:00 PM</p>
@@ -27,34 +30,38 @@
                 </div>
                 <div class="rival-team">Reims</div>
                 -->
-        </header>
+                </div>
+            </div>
 
-        <section class="match-results">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="5">
-                            <h2>Match Results</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody id="previous-matches-table">
+            <section class="match-results">
+                <h2 class="title">Resultados</h2>
+                <table class="results-table">
+                    <!-- <thead>
+                        <tr>
+                            <th colspan="7">
+                                <h2 class="title">Resultados</h2>
+                            </th>
+                        </tr>
+                    </thead> -->
+                    <tbody id="previous-matches-table">
 
-                </tbody>
-            </table>
-        </section>
-    </div>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
     <footer class="footer"></footer>
     <script src="../scripts/codigo-fixture.js"></script>
     <script>
         function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "250px";
         }
-    
+
         function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0";
         }
-      </script>
+    </script>
 </body>
 
 </html>

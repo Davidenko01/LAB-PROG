@@ -9,13 +9,25 @@ body {
     background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
     background-size: cover;
     background-repeat: round;    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 100vh;
+}
+
+header, main, footer{
+  width: 100%;
+}
+
+main{
+  margin: 80px 0
 }
 
 /* -------------------- HEADER -------------------- */
 
 .header {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 80px; 
+  background-color: rgba(0, 0, 0, 0.8);
+  /* margin-bottom: 80px;  */
   color: #eee;
 }
 
@@ -34,6 +46,11 @@ body {
   object-fit: cover;
   background-color: #eee;
   border-radius: 15px;
+}
+
+.header a{
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -153,10 +170,11 @@ h1 {
 /* -------------------- FOOTER --------------------- */
 
 .footer{
-    margin-top: 80px;
-    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+    background-color:rgba(0, 0, 0, 0.8);
     font-size: 13px;
     color: #eee;
+    
   }
   
   .footer__container{
