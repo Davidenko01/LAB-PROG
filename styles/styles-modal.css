@@ -20,15 +20,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.775);
+  background-color: black;
   margin: 0 auto;
   padding: 0;
   border: 1px solid #000000;
   border-radius: 0.5%;
-  width: 600px;
+  width: 900px;
   max-width: 100%;
-  height: fit-content;
+  height: 380px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 13px;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -63,21 +64,24 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .modal-header {
   text-align: center; 
-  margin-top: 3px;
+  margin-top: 20px;
   padding: 5px 18px;
   background-color: #51d032d5;
   color: white;
   height: 20%;
+  border-radius: 3px;
 }
 
 .modal-header h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 10px;
-    font-size: 200%;
+    margin-bottom: auto;
+    font-size: 250%;
 }
 
 .modal-body {
   padding: 2px 16px;
+  margin-top: 30px;
   text-align: center;
   color: white;
   background-color: black;
@@ -86,6 +90,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .modal-body p {
     margin-top: 30px;
-    font-size: larger;
+    font-size:larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
