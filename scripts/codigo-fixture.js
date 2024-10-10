@@ -69,6 +69,19 @@ function crearFixture(url, equipo) {
             equipoRNombre.className = 'team-name';
             equipoRNombre.textContent = match.opponent;
 
+            // PONGO LA COLUMNA EXTRA AL FINAL Y ESTABLEZCO EL COLOR
+            const columnaExtraFinal = partido.insertCell();
+            columnaExtraFinal.className = 'column-end';
+
+            // Ajusta el color de fondo basado en el valor del score del equipo seleccionado
+            if (match.team_score > match.opponent_score) {
+                columnaExtraFinal.style.backgroundColor = 'green';
+            } else if (match.team_score < match.opponent_score) {
+                columnaExtraFinal.style.backgroundColor = 'red';
+            } else {
+                columnaExtraFinal.style.backgroundColor = 'gray'; // Empate
+            }
+
         });
     });
 
