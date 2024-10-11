@@ -9,6 +9,11 @@
   width: 750px;
 }
 
+.escudo {
+  width: 30px;
+  height: 30px;
+}
+
 tbody tr { 
 cursor: pointer;
 }
@@ -27,6 +32,7 @@ background-color:rgba(234, 47, 18, 0.249);
 
 th {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px;
 }
 
 td {
@@ -36,7 +42,6 @@ border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 
 th, td {
   text-align: center;
-  padding: 6px;
   color: white;
 }
 
@@ -58,5 +63,11 @@ border-right: 1px solid rgba(255, 255, 255, 0.5);
 
 #tabla-pos tbody tr td:not(:last-child) {
 border-right: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.team-name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 /* ------------------- FIN-TABLA ------------------- */

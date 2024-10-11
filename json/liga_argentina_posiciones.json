@@ -9,7 +9,8 @@
             "pp": 2,
             "gf": 29,
             "gc": 8,
-            "dif": 21
+            "dif": 21,
+            "icon": "velez.png"
         },
         {
             "team": "Talleres (C)",
@@ -20,7 +21,8 @@
             "pp": 4,
             "gf": 29,
             "gc": 16,
-            "dif": 13
+            "dif": 13,
+            "icon": "talleres.png"
         },
         {
             "team": "Hurac\u00e1n",
@@ -31,7 +33,8 @@
             "pp": 4,
             "gf": 27,
             "gc": 19,
-            "dif": 8
+            "dif": 8,
+            "icon": "huracan.png"
         },
         {
             "team": "Uni\u00f3n",
@@ -42,7 +45,8 @@
             "pp": 5,
             "gf": 24,
             "gc": 18,
-            "dif": 6
+            "dif": 6,
+            "icon": "union.png"
         },
         {
             "team": "Instituto",
@@ -53,7 +57,8 @@
             "pp": 5,
             "gf": 20,
             "gc": 13,
-            "dif": 7
+            "dif": 7,
+            "icon": "instituto.png"
         },
         {
             "team": "Atl Tucum\u00e1n",
@@ -64,7 +69,8 @@
             "pp": 4,
             "gf": 21,
             "gc": 14,
-            "dif": 7
+            "dif": 7,
+            "icon": "atleticotucuman.png"
         },
         {
             "team": "River Plate",
@@ -75,7 +81,8 @@
             "pp": 6,
             "gf": 20,
             "gc": 19,
-            "dif": 1
+            "dif": 1,
+            "icon": "river.png"
         },
         {
             "team": "Racing Club",
@@ -86,7 +93,8 @@
             "pp": 4,
             "gf": 25,
             "gc": 30,
-            "dif": -5
+            "dif": -5,
+            "icon": "racing.png"
         },
         {
             "team": "Belgrano",
@@ -97,7 +105,8 @@
             "pp": 4,
             "gf": 19,
             "gc": 17,
-            "dif": 2
+            "dif": 2,
+            "icon": "belgrano.png"
         },
         {
             "team": "Riestra",
@@ -108,7 +117,9 @@
             "pp": 4,
             "gf": 14,
             "gc": 12,
-            "dif": 2
+            "dif": 2,
+            "icon": "riestra.png"
+
         },
         {
             "team": "Gimnasia (LP)",
@@ -119,7 +130,8 @@
             "pp": 6,
             "gf": 22,
             "gc": 20,
-            "dif": 2
+            "dif": 2,
+            "icon": "gimnasia.png"
         },
         {
             "team": "Boca Juniors",
@@ -130,7 +142,8 @@
             "pp": 7,
             "gf": 16,
             "gc": 18,
-            "dif": -2
+            "dif": -2,
+            "icon": "boca.png"
         },
         {
             "team": "Estudiantes (LP)",
@@ -141,7 +154,8 @@
             "pp": 6,
             "gf": 16,
             "gc": 16,
-            "dif": 0
+            "dif": 0,
+            "icon": "estudiantes.png"
         },
         {
             "team": "Rosario Central",
@@ -152,7 +166,8 @@
             "pp": 4,
             "gf": 16,
             "gc": 15,
-            "dif": 1
+            "dif": 1,
+            "icon": "rosariocentral.png"
         },
         {
             "team": "Godoy Cruz",
@@ -163,7 +178,8 @@
             "pp": 4,
             "gf": 15,
             "gc": 14,
-            "dif": 1
+            "dif": 1,
+            "icon": "godoycruz.png"
         },
         {
             "team": "Platense",
@@ -174,7 +190,8 @@
             "pp": 6,
             "gf": 11,
             "gc": 14,
-            "dif": -3
+            "dif": -3,
+            "icon": "platense.png"
         },
         {
             "team": "Lan\u00fas",
@@ -185,7 +202,8 @@
             "pp": 6,
             "gf": 18,
             "gc": 22,
-            "dif": -4
+            "dif": -4,
+            "icon": "lanus.png"
         },
         {
             "team": "Independiente Rivadavia",
@@ -196,7 +214,8 @@
             "pp": 7,
             "gf": 16,
             "gc": 22,
-            "dif": -6
+            "dif": -6,
+            "icon": "independienteriv.png"
         },
         {
             "team": "Independiente",
@@ -207,7 +226,8 @@
             "pp": 7,
             "gf": 19,
             "gc": 20,
-            "dif": -1
+            "dif": -1,
+            "icon": "independiente.png"
         },
         {
             "team": "Argentinos Juniors",
@@ -218,7 +238,8 @@
             "pp": 7,
             "gf": 19,
             "gc": 20,
-            "dif": -1
+            "dif": -1,
+            "icon": "argentinos.png"
         },
         {
             "team": "San Lorenzo",
@@ -229,7 +250,8 @@
             "pp": 8,
             "gf": 15,
             "gc": 18,
-            "dif": -3
+            "dif": -3,
+            "icon": "sanlorenzo.png"
         },
         {
             "team": "Tigre",
@@ -240,7 +262,8 @@
             "pp": 6,
             "gf": 13,
             "gc": 16,
-            "dif": -3
+            "dif": -3,
+            "icon": "tigre.png"
         },
         {
             "team": "Banfield",
@@ -251,7 +274,8 @@
             "pp": 6,
             "gf": 14,
             "gc": 19,
-            "dif": -5
+            "dif": -5,
+            "icon": "banfield.png"
         },
         {
             "team": "Newell's",
@@ -262,7 +286,8 @@
             "pp": 7,
             "gf": 16,
             "gc": 24,
-            "dif": -8
+            "dif": -8,
+            "icon": "newells.png"
         },
         {
             "team": "Central C\u00f3rdoba (SdE)",
@@ -273,7 +298,8 @@
             "pp": 8,
             "gf": 14,
             "gc": 22,
-            "dif": -8
+            "dif": -8,
+            "icon": "centralcordoba.png"
         },
         {
             "team": "Sarmiento (J)",
@@ -284,7 +310,8 @@
             "pp": 8,
             "gf": 11,
             "gc": 22,
-            "dif": -11
+            "dif": -11,
+            "icon": "sarmiento.png"
         },
         {
             "team": "Defensa y Justicia",
@@ -295,7 +322,8 @@
             "pp": 8,
             "gf": 8,
             "gc": 21,
-            "dif": -13
+            "dif": -13,
+            "icon": "defensa.png"
         },
         {
             "team": "Barracas Central",
@@ -306,7 +334,8 @@
             "pp": 9,
             "gf": 15,
             "gc": 29,
-            "dif": -14
+            "dif": -14,
+            "icon": "barracas.png"
         }
     ]
 }

@@ -16,7 +16,12 @@ function crearTablaPosiciones(url, liga) {
 
                 const celdaEquipo = fila.insertCell();
                 celdaEquipo.className = "team-name";
-                celdaEquipo.textContent = equipo.team;
+                const escudo = document.createElement('img');
+                escudo.className = "escudo";
+                escudo.src = `../Fotos/primeradivision/${equipo.icon}`
+                celdaEquipo.appendChild(escudo);
+                const nombreEquipo = document.createTextNode(equipo.team);
+                celdaEquipo.appendChild(nombreEquipo);
 
                 const celdaPts = fila.insertCell();
                 celdaPts.textContent = equipo.pts;
