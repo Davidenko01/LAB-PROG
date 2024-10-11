@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/styles-common.css">
     <link rel="stylesheet" href="../styles/styles-fixture.css">
     <link rel="stylesheet" href="../styles/styles-modal.css">
+    <link rel="stylesheet" href="../styles/styles-sidenav.css">
 
     <script defer src="../scripts/carga-header-footer.js"></script>
 </head>
@@ -55,11 +56,15 @@
     <script src="../scripts/codigo-fixture.js"></script>
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            var sidenav = document.getElementById("sidenav");
+            sidenav.classList.add("open");
+            document.getElementById("overlay").style.display = "block"; 
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            var sidenav = document.getElementById("sidenav");
+            sidenav.classList.remove("open");
+            document.getElementById("overlay").style.display = "none"; /* Ocultar overlay */
         }
     </script>
 </body>
