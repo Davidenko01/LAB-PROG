@@ -115,51 +115,6 @@ h1 {
     background-color: #04AA6D;
   }
 
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed; /* se posiciona con respecto al navegador */
-    z-index: 1; /* indica jerarquia de elementos superpuestos*/
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover, .sidenav .closebtn:hover {
-    color: rgba(255, 255, 255, 0.5);
-    
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 25px;
-    margin-left: 50px;
-    background-color: transparent;
-    color: #f1f1f1;
-    border: none;
-    cursor: pointer;
-  }
-
-  .sidenav ul, .nav-bar ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-
   span {
     font-size:30px;
     cursor:pointer;

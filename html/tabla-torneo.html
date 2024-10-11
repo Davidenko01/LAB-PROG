@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../styles/styles-common.css">
   <link rel="stylesheet" href="../styles/styles-table.css">
   <link rel="stylesheet" href="../styles/styles-table-header.css">
+  <link rel="stylesheet" href="../styles/styles-sidenav.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
@@ -22,7 +23,7 @@
 <body>
 
   <header class="header"></header>
-
+  <div id="overlay"></div>
   <main>
     <div class="table-header">
       <div class="table-header__container">
@@ -72,11 +73,15 @@
   <footer class="footer"></footer>
   <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      var sidenav = document.getElementById("sidenav");
+      sidenav.classList.add("open");
+      document.getElementById("overlay").style.display = "block"; 
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      var sidenav = document.getElementById("sidenav");
+      sidenav.classList.remove("open");
+      document.getElementById("overlay").style.display = "none"; /* Ocultar overlay */
     }
   </script>
 </body>
