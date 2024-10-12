@@ -9,7 +9,8 @@
         "pp": 1,
         "gf": 14,
         "gc": 5,
-        "dif": 9
+        "dif": 9,
+        "icon":"napoli1.png"
       },
       {
         "team": "Inter Milán",
@@ -20,7 +21,8 @@
         "pp": 1,
         "gf": 16,
         "gc": 9,
-        "dif": 7
+        "dif": 7,
+        "icon":"inter.png"
       },
       {
         "team": "Juventus Turín",
@@ -31,7 +33,8 @@
         "pp": 2,
         "gf": 14,
         "gc": 11,
-        "dif": 3
+        "dif": 3,
+        "icon":"juventus.png"
       },
       {
         "team": "Lazio Roma",
@@ -42,7 +45,8 @@
         "pp": 2,
         "gf": 14,
         "gc": 10,
-        "dif": 4
+        "dif": 4,
+        "icon":"lazio.png"
       },
       {
         "team": "Udinese Calcio",
@@ -53,7 +57,8 @@
         "pp": 2,
         "gf": 10,
         "gc": 5,
-        "dif": 5
+        "dif": 5,
+        "icon":"udinese.png"
       },
       {
         "team": "AC Milán",
@@ -64,7 +69,8 @@
         "pp": 2,
         "gf": 7,
         "gc": 7,
-        "dif": 0
+        "dif": 0,
+        "icon":"milan.png"
       },
       {
         "team": "Torino FC",
@@ -75,7 +81,8 @@
         "pp": 2,
         "gf": 12,
         "gc": 12,
-        "dif": 0
+        "dif": 0,
+        "icon":"torino.png"
       },
       {
         "team": "Atalanta",
@@ -86,7 +93,8 @@
         "pp": 3,
         "gf": 13,
         "gc": 10,
-        "dif": 3
+        "dif": 3,
+        "icon":"atalanta.png"
       },
       {
         "team": "AS Roma",
@@ -97,7 +105,8 @@
         "pp": 3,
         "gf": 8,
         "gc": 5,
-        "dif": 3
+        "dif": 3,
+        "icon":"roma.png"
       },
       {
         "team": "Empoli",
@@ -108,7 +117,8 @@
         "pp": 3,
         "gf": 10,
         "gc": 13,
-        "dif": -3
+        "dif": -3,
+        "icon":"empoli.png"
       },
       {
         "team": "ACF Fiorentina",
@@ -119,7 +129,8 @@
         "pp": 2,
         "gf": 6,
         "gc": 6,
-        "dif": 0
+        "dif": 0,
+        "icon":"fiorentina.png"
       },
       {
         "team": "Hellas Verona",
@@ -130,7 +141,8 @@
         "pp": 2,
         "gf": 8,
         "gc": 12,
-        "dif": -4
+        "dif": -4,
+        "icon":"hellasverona.png"
       },
       {
         "team": "Bolonia FC",
@@ -141,7 +153,8 @@
         "pp": 2,
         "gf": 10,
         "gc": 12,
-        "dif": -2
+        "dif": -2,
+        "icon":"bologna.png"
       },
       {
         "team": "Como 1907",
@@ -152,7 +165,8 @@
         "pp": 4,
         "gf": 7,
         "gc": 11,
-        "dif": -4
+        "dif": -4,
+        "icon":"como.png"
       },
       {
         "team": "Cagliari Calcio",
@@ -163,7 +177,8 @@
         "pp": 3,
         "gf": 7,
         "gc": 12,
-        "dif": -5
+        "dif": -5,
+        "icon":"cagliari.png"
       },
       {
         "team": "Parma Calcio",
@@ -174,7 +189,8 @@
         "pp": 4,
         "gf": 9,
         "gc": 14,
-        "dif": -5
+        "dif": -5,
+        "icon":"parma.png"
       },
       {
         "team": "US Lecce",
@@ -185,7 +201,8 @@
         "pp": 4,
         "gf": 9,
         "gc": 15,
-        "dif": -6
+        "dif": -6,
+        "icon":"lecce.png"
       },
       {
         "team": "Génova CFC",
@@ -196,7 +213,8 @@
         "pp": 4,
         "gf": 5,
         "gc": 15,
-        "dif": -10
+        "dif": -10,
+        "icon":"genoa.png"
       },
       {
         "team": "Monza",
@@ -207,7 +225,8 @@
         "pp": 5,
         "gf": 9,
         "gc": 15,
-        "dif": -6
+        "dif": -6,
+        "icon":"monza.png"
       },
       {
         "team": "Venezia",
@@ -218,7 +237,8 @@
         "pp": 5,
         "gf": 5,
         "gc": 12,
-        "dif": -7
+        "dif": -7,
+        "icon":"venezia.png"
       }
     ]
   }

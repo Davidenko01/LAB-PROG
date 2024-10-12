@@ -10,7 +10,8 @@
             "pp": 1,
             "gf": 25,
             "gc": 9,
-            "dif": 16
+            "dif": 16,
+            "icon":"barcelona.png"
         },
         {
             "team": "Real Madrid CF",
@@ -21,7 +22,8 @@
             "pp": 1,
             "gf": 17,
             "gc": 6,
-            "dif": 11
+            "dif": 11,
+            "icon":"realmadrid.png"
         },
         {
             "team": "Villarreal CF",
@@ -32,7 +34,8 @@
             "pp": 0,
             "gf": 18,
             "gc": 7,
-            "dif": 11
+            "dif": 11,
+            "icon":"villarreal.png"
         },
         {
             "team": "Atl\u00e9tico Madrid",
@@ -43,7 +46,8 @@
             "pp": 2,
             "gf": 14,
             "gc": 8,
-            "dif": 6
+            "dif": 6,
+            "icon":"atlmadrid.png"
         },
         {
             "team": "Athletic Bilbao",
@@ -54,7 +58,8 @@
             "pp": 2,
             "gf": 12,
             "gc": 9,
-            "dif": 3
+            "dif": 3,
+            "icon":"athletic.png"
         },
         {
             "team": "RCD Mallorca",
@@ -65,7 +70,8 @@
             "pp": 2,
             "gf": 11,
             "gc": 9,
-            "dif": 2
+            "dif": 2,
+            "icon":"mallorca.png"
         },
         {
             "team": "CA Osasuna",
@@ -76,7 +82,8 @@
             "pp": 3,
             "gf": 12,
             "gc": 13,
-            "dif": -1
+            "dif": -1,
+            "icon":"osasuna.png"
         },
         {
             "team": "Real Betis Balompi\u00e9",
@@ -87,7 +94,8 @@
             "pp": 2,
             "gf": 12,
             "gc": 11,
-            "dif": 1
+            "dif": 1,
+            "icon":"betis.png"
         },
         {
             "team": "Rayo Vallecano",
@@ -98,7 +106,8 @@
             "pp": 2,
             "gf": 11,
             "gc": 9,
-            "dif": 2
+            "dif": 2,
+            "icon":"rayovallecano.png"
         },
         {
             "team": "RC Celta de Vigo",
@@ -109,7 +118,8 @@
             "pp": 4,
             "gf": 9,
             "gc": 9,
-            "dif": 0
+            "dif": 0,
+            "icon":"celta.png"
         },
         {
             "team": "Deportivo Alav\u00e9s",
@@ -120,7 +130,8 @@
             "pp": 4,
             "gf": 8,
             "gc": 11,
-            "dif": -3
+            "dif": -3,
+            "icon":"alaves.png"
         },
         {
             "team": "Girona FC",
@@ -131,7 +142,8 @@
             "pp": 3,
             "gf": 10,
             "gc": 11,
-            "dif": -1
+            "dif": -1,
+            "icon":"girona.png"
         },
         {
             "team": "Sevilla FC",
@@ -142,7 +154,8 @@
             "pp": 3,
             "gf": 8,
             "gc": 10,
-            "dif": -2
+            "dif": -2,
+            "icon":"sevilla.png"
         },
         {
             "team": "Real Sociedad",
@@ -153,7 +166,8 @@
             "pp": 4,
             "gf": 14,
             "gc": 16,
-            "dif": -2
+            "dif": -2,
+            "icon":"realsociedad.png"
         },
         {
             "team": "CD Legan\u00e9s",
@@ -164,7 +178,8 @@
             "pp": 5,
             "gf": 13,
             "gc": 15,
-            "dif": -2
+            "dif": -2,
+            "icon":"leganes.png"
         },
         {
             "team": "Getafe CF",
@@ -175,7 +190,8 @@
             "pp": 5,
             "gf": 12,
             "gc": 16,
-            "dif": -4
+            "dif": -4,
+            "icon":"getafe.png"
         },
         {
             "team": "RCD Espanyol Barcelona",
@@ -186,7 +202,8 @@
             "pp": 5,
             "gf": 8,
             "gc": 14,
-            "dif": -6
+            "dif": -6,
+            "icon":"espanyol.png"
         },
         {
             "team": "Valencia CF",
@@ -197,7 +214,8 @@
             "pp": 5,
             "gf": 7,
             "gc": 16,
-            "dif": -9
+            "dif": -9,
+            "icon":"valencia.png"
         },
         {
             "team": "Real Valladolid",
@@ -208,7 +226,8 @@
             "pp": 4,
             "gf": 6,
             "gc": 14,
-            "dif": -8
+            "dif": -8,
+            "icon":"valladolid.png"
         },
         {
             "team": "Las Palmas",
@@ -219,7 +238,8 @@
             "pp": 5,
             "gf": 6,
             "gc": 19,
-            "dif": -13
+            "dif": -13,
+            "icon":"udlaspalmas.png"
         }
     ]
 }

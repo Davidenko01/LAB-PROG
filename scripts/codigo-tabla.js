@@ -3,7 +3,7 @@ function crearTablaPosiciones(url, liga) {
         .then(response => response.json())
         .then(data => {
             const tabla = document.getElementById('body-table');
-
+            const directorio=seleccionCarpetaLiga(liga); //Obtenemos directorio correspondiente a la liga
             data.positions.forEach((equipo, index) => {
                 const fila = tabla.insertRow();
                 fila.onclick = () => {
@@ -18,7 +18,7 @@ function crearTablaPosiciones(url, liga) {
                 celdaEquipo.className = "team-name";
                 const escudo = document.createElement('img');
                 escudo.className = "escudo";
-                escudo.src = `../Fotos/primeradivision/${equipo.icon}`
+                escudo.src = `../Fotos/${directorio}/${equipo.icon}`
                 celdaEquipo.appendChild(escudo);
                 const nombreEquipo = document.createTextNode(equipo.team);
                 celdaEquipo.appendChild(nombreEquipo);
@@ -52,6 +52,20 @@ function crearTablaPosiciones(url, liga) {
             console.error('Error al cargar el archivo JSON:', error);
         });
 
+}
+
+function seleccionCarpetaLiga(liga){
+    //Esta funcion recibe por parametro una liga y devuelve el nombre directorio correspondiente a la liga
+    var carpetaLiga;
+    switch(liga){
+        case "lpfa": carpetaLiga="primeradivision"; break;
+        case "pl": carpetaLiga="premier"; break;
+        case "sa": carpetaLiga="seriea"; break;
+        case "ll": carpetaLiga="laliga"; break;
+        case "bl": carpetaLiga="bundesliga"; break;
+        case "pb": carpetaLiga="primerab"; break;
+    }
+    return carpetaLiga;
 }
 
 const urlParams = new URLSearchParams(window.location.search);
