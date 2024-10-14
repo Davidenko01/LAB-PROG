@@ -1,33 +1,86 @@
 <div class="footer__container">
     <ul class="footer__list">
-        <li class="footer__item-label">football tables</li>
-        <li class="footer__item"><a class="footer__link" href="#">Condiciones de uso</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Políticas de Privacidad</a></li>
+        <li class="footer__item footer__item--label">football tables</li>
+        <li class="footer__item">
+            <a href="#" class="footer__link footer__link-open-modal" data-key="condiciones-de-uso">
+                Condiciones de uso
+            </a>
+        </li>
+        <li class="footer__item">
+            <a href="#" class="footer__link footer__link-open-modal" data-key="politicas-de-privacidad">
+                Políticas de Privacidad
+            </a>
+        </li>
     </ul>
     <ul class="footer__list">
-        <li class="footer__item-label">seguinos</li>
-        <li class="footer__item"><a class="footer__link" href="#">Facebook</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">X</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Instagram</a></li>
+        <li class="footer__item footer__item--label">seguinos</li>
+        <li class="footer__item">
+            <a class="footer__link" href="#">
+                <div class="fa fa-facebook">&nbsp</div>
+                Facebook
+            </a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link " href="#">
+                <div class="fa fa-twitter">&nbsp</div>
+                X
+            </a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="#">
+                <div class="fa fa-instagram">&nbsp</div>
+                Instagram
+            </a>
+        </li>
     </ul>
     <ul class="footer__list">
-        <li class="footer__item-label">
+        <li class="footer__item footer__item--label">
             <a name="contactos">contactanos</a>
         </li>
         <li class="footer__item">
-            <a class="footer__link" href="mailto: davor.kissner@est.fi.uncoma.edu.ar">Davor Kissner</a>
+            <a class="footer__link" href="https://github.com/Davidenko01" target="_blank" rel="noopener">
+                <div class="fa fa-github"></div>
+                Davor Kissner
+            </a>
         </li>
         <li class="footer__item">
-            <a class="footer__link" href="mailto: tomas.occhi@est.fi.uncoma.edu.ar">Tomás Occhi</a>
+            <a class="footer__link" href="https://github.com/tomas-occhi" target="_blank" rel="noopener">
+                <div class="fa fa-github"></div>
+                Tomás Occhi
+            </a>
         </li>
         <li class="footer__item">
-            <a class="footer__link" href="#">Leonard Fernandez</a>
+            <a class="footer__link" href="https://github.com/LeonardFernandez" target="_blank" rel="noopener">
+                <div class="fa fa-github"></div>
+                Leonard Fernandez
+            </a>
         </li>
         <li class="footer__item">
-            <a class="footer__link" href="mailto: geduardo.cid@est.fi.uncoma.edu.ar">Gastón Cid</a>
+            <a class="footer__link" href="https://github.com/gaston-cid" target="_blank" rel="noopener">
+                <div class="fa fa-github"></div>
+                Gastón Cid
+            </a>
         </li>
     </ul>
 </div>
 <div class="footer__text">
     Football Tables - &#169 Copyright 2024-25
 </div>
+
+
+<dialog class="modal-window">
+    <div class="modal-window__container">
+        <h2 class="modal-window__title"></h2>
+        <div class="modal-window__content">
+        </div>
+
+        <form method="dialog">
+            <button class="modal-window__button modal-window__button--close" id="close-button">x</button>
+        </form>
+        <a href="#close-button">
+            <button class="modal-window__button modal-window__button--up">
+                <i class="arrow up"></i>
+            </button>
+        </a>
+    </div>
+</dialog>

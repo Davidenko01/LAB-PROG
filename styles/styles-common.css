@@ -1,25 +1,27 @@
-*  {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
-    background-size: cover;
-    background-repeat: round;    
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
+  background-size: cover;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 100vh;
 }
 
-header, main, footer{
+header,
+main,
+footer {
   width: 100%;
 }
 
-main{
+main {
   margin: 80px 0
 }
 
@@ -37,7 +39,7 @@ main{
   border-bottom: 1px solid #0005;
   gap: 10px;
   padding: 15px;
-  
+
 }
 
 .header__logo {
@@ -48,7 +50,7 @@ main{
   border-radius: 15px;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: inherit;
 }
@@ -59,114 +61,264 @@ h1 {
   font-style: italic;
 }
 
-
 /* ------------ NAV-BAR(sticky) ------------ */
 
-.navbar{
-  position:relative;
+.navbar {
+  position: relative;
   width: 100%;
   color: white;
 }
 
-.nav-bar a, .nav-bar button{
+.nav-bar a,
+.nav-bar button {
   color: white;
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.nav-bar ul{
-  list-style:none;
+.nav-bar ul {
+  list-style: none;
 }
 
-.navbar.sticky{
-  top:0;
-  position:fixed;
+.navbar.sticky {
+  top: 0;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
 }
-.navbar a, button{
 
-    display: block;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
+.navbar a,
+.navbar button,
+.sidenav button {
+
+  display: block;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.navbar ul{
-  list-style:none;
+.navbar ul {
+  list-style: none;
   display: flex;
   margin-left: 25px;
 }
 
-  .menu {
-    background-color: transparent;
-    border: none;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover, .navbar button:hover {
-    background-color: rgba(255, 255, 255, 0.457);
-    cursor: pointer;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
-  }
+.menu {
+  background-color: transparent;
+  border: none;
+}
 
-  span {
-    font-size:30px;
-    cursor:pointer;
-  }
-  /* ---------- FIN-NAV-BAR ---------- */
+/* Navbar links on mouse-over */
+.navbar a:hover,
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.457);
+  cursor: pointer;
+}
 
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ---------- FIN-NAV-BAR ---------- */
 /* ------------------ FIN-HEADER ------------------ */
+
 /* -------------------- FOOTER --------------------- */
 
-.footer{
-    margin-top: auto;
-    background-color:rgba(0, 0, 0, 0.8);
-    font-size: 13px;
-    color: #eee;
-    
-  }
-  
-  .footer__container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 40px;
-  }
-  
-  .footer__list{
-    list-style-type: none;  
-  }
-  
-  .footer__item-label{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .footer__link{
-    display: inline-block;
-    text-decoration: none;
-    margin: 6px 0;
-    color: inherit;
-    padding: 1px;
-  }
-  
-  .footer__link:hover{
-    text-decoration:underline;
-    color: revert;
-  }
-  
-  .footer__text{
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #0007;
-  }
-  
-  /* ----------------
+.footer {
+  margin-top: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  color: #eee;
+
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 20px 10px;
+}
+
+.footer__item--label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 6px 0;
+  color: inherit;
+  padding: 1px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  color: #04AA6D;
+}
+
+.footer__text {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #0007;
+}
+
+/* --------- VENTANAS-MODAL --------- */
+
+.modal-window {
+  background-color: #000;
+  margin: auto;
+  max-width: 80;
+  border-radius: 15px;
+}
+
+.modal-window::backdrop {
+  background-color: #0009;
+}
+
+.modal-window__container {
+  position: relative;
+  color: #eee;
+  font-size: clamp(10px, 3vw, 14px);
+  padding: 50px;
+  margin: auto;
+}
+
+.modal-window__button {
+  position: absolute;
+  right: 20px;
+  font-weight: 700;
+  border: none;
+}
+
+.modal-window__button--close {
+  top: 20px;
+  background-color: transparent;
+  font-size: 28px;
+  padding: 0 2px;
+  color: inherit;
+}
+
+.modal-window__button--up {
+  bottom: 20px;
+  padding: 5px 10px;
+  background-color: #04AA6D;
+  border-radius: 14px;
+}
+
+.modal-window__button:hover {
+  color: rgb(233, 105, 105);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-window__title {
+  text-align: center;
+  background-color: #04AA6D;
+  margin: auto;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.modal-window__content {
+  margin: auto;
+  width: 90%;
+}
+
+.modal-window__content p {
+  margin: 10px 0;
+}
+
+
+.modal-window__content h3 {
+  margin: 10px 0;
+  color: #04AA6D;
+}
+
+.modal-window__content ol {
+  margin-left: 30px;
+}
+
+.modal-window__content p+h3,
+.modal-window__content ol+h3 {
+  margin-top: 30px;
+}
+
+h2.modal-window__title+.modal-window__content p:first-child {
+  margin-top: 50px;
+
+}
+
+.arrow {
+  border: solid #eee;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 7px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* --------- FIN-VENTANAS-MODAL --------- */
+
+/* ------------------ FIN-FOOTER ------------------- */
+
+
+/* ------------ BARRA-DE-DESPLAZAMIENTO ------------ */
+
+/* Estilo general de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 15px;
+  /* Ancho de la barra de desplazamiento */
+  height: 15px;
+  /* Altura de la barra en elementos horizontales */
+}
+
+/* Estilo del "track" (fondo) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* Color de fondo del track */
+  border-radius: 10px;
+  /* Opcional: redondear las esquinas */
+}
+
+/* Estilo del "thumb" (la parte que se mueve) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  /* Color del thumb */
+  border-radius: 10px;
+  /* Opcional: redondear las esquinas */
+  border: 3px solid #f0f0f0;
+  /* Espacio entre el thumb y el track */
+}
+
+/* Cambiar el color del thumb cuando el usuario lo pasa por encima */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  /* Color del thumb al pasar el cursor */
+}
+
+/* Cambiar el color del thumb cuando el usuario hace clic */
+::-webkit-scrollbar-thumb:active {
+  background-color: #555;
+  /* Color del thumb al hacer clic */
+}
+
+/* ---------- FIN-BARRA-DE-DESPLAZAMIENTO ---------- */
