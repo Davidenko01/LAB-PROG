@@ -1,15 +1,20 @@
-function crearFixture(url, equipo) {
+function crearFixture(url, equipo, liga) {
     fetch(url)
     .then(response => response.json())
     .then(data => {
         //ACÁ BUSCO AL EQUIPO EN EL JSON
         const equipoEncontrado = data.teams.find((elemento) => elemento.name === equipo);
         const matchInfo = document.getElementsByClassName('match-info')[0];
+        const directorio=seleccionCarpetaLiga(liga);
 
         //ACÁ CREO LA PARTE DEL PROXIMO PARTIDO
         const equipoSeleccionado = document.createElement('div');
         equipoSeleccionado.className = 'selected-team';
+        const escudoSProx = document.createElement('img');
+        escudoSProx.className = "escudo";
+        escudoSProx.src = `../Fotos/${directorio}/${equipoEncontrado.icon}`
         equipoSeleccionado.textContent = equipo;
+        equipoSeleccionado.appendChild(escudoSProx);
         matchInfo.appendChild(equipoSeleccionado);
 
         const infoFechaEstadio = document.createElement('div');
@@ -27,6 +32,11 @@ function crearFixture(url, equipo) {
         const equipoRival = document.createElement('div');
         equipoRival.className = 'rival-team';
         equipoRival.textContent = equipoEncontrado.next_match.opponent;
+        const escudoRProx = document.createElement('img');
+        escudoRProx.className = "escudo";
+        const equipoRivalProx = data.teams.find((tipo) => tipo.name === equipoEncontrado.next_match.opponent);
+        escudoRProx.src = `../Fotos/${directorio}/${equipoRivalProx.icon}`
+        equipoRival.appendChild(escudoRProx);
         matchInfo.appendChild(equipoRival);
 
         //ACA VA LA PARTE DE LOS ANTERIORES PARTIDOS
@@ -40,7 +50,12 @@ function crearFixture(url, equipo) {
             //PONGO EL NOMBRE DEL EQUIPO SELECCIOANDO
             const equipoSNombre = partido.insertCell();
             equipoSNombre.className = 'team-name';
-            equipoSNombre.textContent = equipo;
+            const escudoS = document.createElement('img');
+            escudoS.className = "escudo";
+            escudoS.src = `../Fotos/${directorio}/${equipoEncontrado.icon}`
+            const nombreEquipo = document.createTextNode(equipo);
+            equipoSNombre.appendChild(escudoS);
+            equipoSNombre.appendChild(nombreEquipo);
 
             //PONGO LOS GOLES DEL EQUIPO SELECCIONADO
             const equipoSGoles = partido.insertCell();
@@ -67,7 +82,13 @@ function crearFixture(url, equipo) {
             //PONGO EL NOMBRE DEL EQUIPO RIVAL
             const equipoRNombre = partido.insertCell();
             equipoRNombre.className = 'team-name';
-            equipoRNombre.textContent = match.opponent;
+            const escudoR = document.createElement('img');
+            escudoR.className = "escudo";
+            let equipoR = data.teams.find((tipo) => tipo.name === match.opponent);
+            escudoR.src = `../Fotos/${directorio}/${equipoR.icon}`
+            const nombreRival = document.createTextNode(match.opponent);
+            equipoRNombre.appendChild(escudoR);
+            equipoRNombre.appendChild(nombreRival);
 
             // PONGO LA COLUMNA EXTRA AL FINAL Y ESTABLEZCO EL COLOR
             const columnaExtraFinal = partido.insertCell();
@@ -87,11 +108,25 @@ function crearFixture(url, equipo) {
 
 }
 
+function seleccionCarpetaLiga(liga){
+    //Esta funcion recibe por parametro una liga y devuelve el nombre directorio correspondiente a la liga
+    var carpetaLiga;
+    switch(liga){
+        case "lpfa": carpetaLiga="primeradivision"; break;
+        case "pl": carpetaLiga="premier"; break;
+        case "sa": carpetaLiga="seriea"; break;
+        case "ll": carpetaLiga="laliga"; break;
+        case "bl": carpetaLiga="bundesliga"; break;
+        case "pb": carpetaLiga="primeranacional"; break;
+    }
+    return carpetaLiga;
+}
+
 const urlParams = new URLSearchParams(window.location.search);
 const liga = urlParams.get('liga');
 const equipo = urlParams.get('equipo');
 let anchor;
 switch(liga) {
-    default: crearFixture('../json/partidos.json', equipo);
+    default: crearFixture('../json/partidos.json', equipo, liga);
     ;break;
 }

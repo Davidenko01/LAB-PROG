@@ -47,6 +47,11 @@ th {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
+.escudo {
+    width: 60px;
+    height: 60px;
+}
+
 .next-matches{
     background-color: rgba(0, 0, 0, 0.9);;
     border-radius: 8px;
@@ -61,6 +66,10 @@ th {
 }
 
 .selected-team, .rival-team {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: clamp(12px, 3vw, 20px);
     font-weight: bold;

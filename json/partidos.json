@@ -2,6 +2,7 @@
     "teams": [
       {
         "name": "Vélez",
+        "icon": "velez.png",
         "last_5_matches": [
           {
             "opponent": "Huracán",
@@ -47,6 +48,7 @@
       },
       {
         "name": "Huracán",
+        "icon": "huracan.png",
         "last_5_matches": [
           {
             "opponent": "Vélez",
@@ -92,6 +94,7 @@
       },
       {
         "name": "Talleres (C)",
+        "icon": "talleres.png",
         "last_5_matches": [
           {
             "opponent": "Independiente",
@@ -137,6 +140,7 @@
       },
       {
         "name": "Instituto",
+        "icon": "instituto.png",
         "last_5_matches": [
           {
             "opponent": "Unión",
@@ -182,6 +186,7 @@
       },
       {
         "name": "Unión",
+        "icon": "union.png",
         "last_5_matches": [
           {
             "opponent": "Instituto",
@@ -227,6 +232,7 @@
       },
       {
         "name": "Atl Tucumán",
+        "icon": "atleticotucuman.png",
         "last_5_matches": [
             {
               "opponent": "Racing Club",
@@ -272,6 +278,7 @@
         },
         {
           "name": "Racing Club",
+          "icon": "racing.png",
           "last_5_matches": [
             {
               "opponent": "Atl Tucumán",
@@ -317,6 +324,7 @@
         },
         {
           "name": "Belgrano",
+          "icon": "belgrano.png",
           "last_5_matches": [
             {
               "opponent": "Tigre",
@@ -362,6 +370,7 @@
         },
         {
           "name": "River Plate",
+          "icon": "river.png",
           "last_5_matches": [
             {
               "opponent": "Independiente",
@@ -407,6 +416,7 @@
         },
         {
           "name": "Riestra",
+          "icon": "riestra.png",
           "last_5_matches": [
             {
               "opponent": "Huracán",
@@ -452,6 +462,7 @@
         },
         {
           "name": "Gimnasia (LP)",
+          "icon": "gimnasia.png",
           "last_5_matches": [
             {
               "opponent": "Atl Tucumán",
@@ -496,6 +507,7 @@
           }
         },{
             "name": "Argentinos Juniors",
+            "icon": "argentinos.png",
             "last_5_matches": [
               {
                 "opponent": "Estudiantes",
@@ -541,6 +553,7 @@
           },
           {
             "name": "Boca Juniors",
+            "icon": "boca.png",
             "last_5_matches": [
               {
                 "opponent": "River Plate",
@@ -586,6 +599,7 @@
           },
           {
             "name": "San Lorenzo",
+            "icon": "sanlorenzo.png",
             "last_5_matches": [
               {
                 "opponent": "Gimnasia (LP)",
@@ -630,6 +644,7 @@
             }
           },{
             "name": "Estudiantes (LP)",
+            "icon": "estudiantes.png",
             "last_5_matches": [
               {
                 "opponent": "River Plate",
@@ -674,6 +689,7 @@
             }
           },{
             "name": "Rosario Central",
+            "icon": "rosariocentral.png",
             "last_5_matches": [
               {
                 "opponent": "Independiente",
