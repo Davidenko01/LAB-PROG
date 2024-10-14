@@ -1,0 +1,83 @@
+{
+  "title": "Condiciones de uso",
+  "sections": [
+    {
+      "type": "paragraph",
+      "content": "Bienvenido a Borde Interno (en adelante, el \"Sitio\"). Al acceder y utilizar este Sitio, aceptas cumplir con las siguientes condiciones de uso. Si no estás de acuerdo con alguna de estas condiciones, te recomendamos que no utilices el Sitio."
+    },
+    {
+      "type": "title",
+      "content": "1. Uso del Sitio"
+    },
+    {
+      "type": "list",
+      "content": [
+        "El contenido del Sitio, que incluye estadísticas, resultados, información de equipos y otros datos de ligas de fútbol, se proporciona con fines informativos y recreativos.",
+        "Los usuarios del Sitio aceptan no utilizar la información proporcionada para fines ilegales, inapropiados o contrarios a las leyes aplicables en su jurisdicción."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "2. Propiedad Intelectual"
+    },
+    {
+      "type": "list",
+      "content": [
+        "Todos los contenidos disponibles en el Sitio, como texto, gráficos, logos, iconos, imágenes, clips de audio, descargas digitales y compilaciones de datos, son propiedad de Borde Interno o de sus proveedores de contenido y están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual.",
+        "Se prohíbe la reproducción, distribución, modificación o uso de los contenidos sin la autorización expresa de Borde Interno."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "3. Limitación de Responsabilidad"
+    },
+    {
+      "type": "list",
+      "content": [
+        "Borde Interno se esfuerza por garantizar que toda la información publicada en el Sitio sea precisa y esté actualizada. Sin embargo, no garantiza la exactitud, integridad o actualidad de dicha información.",
+        "Borde Interno no se hace responsable de los daños o pérdidas que puedan derivarse del uso de la información proporcionada, incluidos errores o omisiones."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "4. Enlaces a Sitios Externos"
+    },
+    {
+      "type": "list",
+      "content": [
+        "El Sitio puede contener enlaces a otros sitios web que no son propiedad ni están controlados por Borde Interno.",
+        "Borde Interno no se hace responsable del contenido, prácticas de privacidad o términos de uso de los sitios enlazados."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "5. Modificaciones en las Condiciones de Uso"
+    },
+    {
+      "type": "list",
+      "content": [
+        "Borde Interno se reserva el derecho de modificar estas condiciones de uso en cualquier momento. Cualquier cambio será efectivo inmediatamente después de su publicación en el Sitio.",
+        "Es responsabilidad del usuario revisar periódicamente estas condiciones de uso para estar informado de cualquier actualización."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "6. Jurisdicción y Ley Aplicable"
+    },
+    {
+      "type": "list",
+      "content": [
+        "Estas condiciones de uso se regirán e interpretarán de acuerdo con las leyes de Argentina.",
+        "En caso de disputa, el usuario y Borde Interno acuerdan someterse a la jurisdicción exclusiva de los tribunales de Argentina."
+      ]
+    },
+    {
+      "type": "title",
+      "content": "7. Contacto"
+    },
+    {
+      "type": "paragraph",
+      "content": "Si tienes alguna pregunta sobre estas Condiciones de Uso, por favor, contáctanos en bordeinterno@business.com o a través de nuestra página de contacto."
+    }
+  ]
+}

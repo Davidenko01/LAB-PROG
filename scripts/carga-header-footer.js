@@ -1,3 +1,5 @@
+import { configurarModalesFooter } from './codigo-modal-footer.js';
+
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         await cargarHeader();
@@ -10,6 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         await cargarFooter();
+        configurarModalesFooter();
     } catch (error) {
         console.error('Error al cargar el footer:', error);
     }
