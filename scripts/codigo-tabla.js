@@ -63,7 +63,7 @@ function seleccionCarpetaLiga(liga){
         case "sa": carpetaLiga="seriea"; break;
         case "ll": carpetaLiga="laliga"; break;
         case "bl": carpetaLiga="bundesliga"; break;
-        case "pb": carpetaLiga="primerab"; break;
+        case "pb": carpetaLiga="primeranacional"; break;
     }
     return carpetaLiga;
 }
@@ -73,25 +73,15 @@ const liga = urlParams.get('liga');
 let anchor;
     switch (liga) {
         case 'pl': crearTablaPosiciones('../json/premier-league.json', 'pl')
-            anchor = document.getElementById('premier');
             ; break;
-        case 'sa': crearTablaPosiciones('../json/serie-A.json', 'pb')
-            anchor = document.getElementById('seriea');
-
+        case 'sa': crearTablaPosiciones('../json/serie-A.json', 'sa')
             ; break;
         case 'll': crearTablaPosiciones('../json/la-liga.json', 'll')
-            anchor = document.getElementById('laliga');
-
             ; break;
         case 'bl': crearTablaPosiciones('../json/bundesliga.json', 'bl')
-            anchor = document.getElementById('bundesliga');
             ; break;
-        case 'pb': crearTablaPosiciones('../json/primera-b.json', 'pb')
-            anchor = document.getElementById('primerab');
-        
+        case 'pb': crearTablaPosiciones('../json/primera-b.json', 'pb')       
             ; break;
         default: crearTablaPosiciones('../json/liga_argentina_posiciones.json', 'lpfa')
-            anchor = document.getElementById('lpfa');
-            anchor.className = "active";
             ; break;
     }

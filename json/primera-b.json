@@ -10,7 +10,8 @@
             "pp": 7,
             "gf": 36,
             "gc": 14,
-            "dif": 22
+            "dif": 22,
+            "icon": "sanmartintuc.png"
         },
         {
             "team": "San Martín de San Juan",
@@ -21,7 +22,8 @@
             "pp": 10,
             "gf": 33,
             "gc": 14,
-            "dif": 22
+            "dif": 22,
+            "icon": "sanmartinsj.png"
         },
         {
             "team": "Gimnasia Jujuy",
@@ -32,7 +34,8 @@
             "pp": 12,
             "gf": 29,
             "gc": 24,
-            "dif": 5
+            "dif": 5,
+            "icon": "gimnasiajujuy.png"
         },
         {
             "team": "Quilmes AC",
@@ -43,7 +46,8 @@
             "pp": 9,
             "gf": 33,
             "gc": 23,
-            "dif": 10
+            "dif": 10,
+            "icon": "quilmes.png"
         },
         {
             "team": "CA San Miguel",
@@ -54,7 +58,8 @@
             "pp": 10,
             "gf": 32,
             "gc": 31,
-            "dif": 1
+            "dif": 1,
+            "icon": "sanmiguel.png"
         },
         {
             "team": "Ferro Carril Oeste",
@@ -65,7 +70,8 @@
             "pp": 12,
             "gf": 50,
             "gc": 41,
-            "dif": 9
+            "dif": 9,
+            "icon": "ferro.png"
         },
         {
             "team": "CA All Boys",
@@ -76,7 +82,8 @@
             "pp": 12,
             "gf": 26,
             "gc": 24,
-            "dif": 2
+            "dif": 2,
+            "icon": "allboys.png"
         },
         {
             "team": "CA Estudiantes",
@@ -87,7 +94,8 @@
             "pp": 14,
             "gf": 28,
             "gc": 29,
-            "dif": -1
+            "dif": -1,
+            "icon": "estudiantes.png"
         },
         {
             "team": "Maipu",
@@ -98,7 +106,8 @@
             "pp": 14,
             "gf": 35,
             "gc": 43,
-            "dif": -8
+            "dif": -8,
+            "icon": "depmaipu.png"
         },
         {
             "team": "Agropecuario Argentino",
@@ -109,7 +118,8 @@
             "pp": 13,
             "gf": 39,
             "gc": 36,
-            "dif": 3
+            "dif": 3,
+            "icon": "agropecuario.png"
         },
         {
             "team": "Racing de Cordoba",
@@ -120,7 +130,8 @@
             "pp": 13,
             "gf": 29,
             "gc": 29,
-            "dif": 0
+            "dif": 0,
+            "icon": "racing_cordoba.png"
         },
         {
             "team": "CA Alvarado",
@@ -131,7 +142,8 @@
             "pp": 12,
             "gf": 29,
             "gc": 34,
-            "dif": -5
+            "dif": -5,
+            "icon": "alvarado.png"
         },
         {
             "team": "Chacarita Juniors",
@@ -142,7 +154,8 @@
             "pp": 10,
             "gf": 40,
             "gc": 40,
-            "dif": 0
+            "dif": 0,
+            "icon": "chacarita.png"
         },
         {
             "team": "Tristán Suárez",
@@ -153,7 +166,8 @@
             "pp": 13,
             "gf": 32,
             "gc": 36,
-            "dif": -4
+            "dif": -4,
+            "icon": "tristansuarez.png"
         },
         {
             "team": "CA Guemes",
@@ -164,7 +178,8 @@
             "pp": 12,
             "gf": 26,
             "gc": 31,
-            "dif": -5
+            "dif": -5,
+            "icon": "guemes.png"
         },
         {
             "team": "Patronato Paraná",
@@ -175,7 +190,8 @@
             "pp": 17,
             "gf": 33,
             "gc": 39,
-            "dif": -6
+            "dif": -6,
+            "icon": "patronato.png"
         },
         {
             "team": "Talleres de Remedios",
@@ -186,7 +202,8 @@
             "pp": 13,
             "gf": 25,
             "gc": 38,
-            "dif": -13
+            "dif": -13,
+            "icon": "talleresre.png"
         },
         {
             "team": "Arsenal de Sarandí",
@@ -197,7 +214,8 @@
             "pp": 16,
             "gf": 31,
             "gc": 41,
-            "dif": -10
+            "dif": -10,
+            "icon": "arsenal.png"
         },
         {
             "team": "Guillermo Brown",
@@ -208,7 +226,8 @@
             "pp": 16,
             "gf": 25,
             "gc": 35,
-            "dif": -10
+            "dif": -10,
+            "icon": "guillermobrown.png"
         }
     ]
 }
