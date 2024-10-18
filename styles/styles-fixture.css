@@ -1,15 +1,17 @@
-/* * {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+} 
 
 tbody#previous-matches-table tr:last-child {
     border-bottom: none;
 }
 
 .column-end{
-    /* width: 5%; */
+    width: 1.5%;
+    height: 150px;
+    margin-left: 20px;
 }
 
 body {
@@ -57,7 +59,7 @@ th {
 
 .match-info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -89,7 +91,7 @@ th {
 .results-table{
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 8px;
-    padding: 0 30px;
+    padding: 0 0 0 30px;
     width: 100%;
     border-radius: 0 0 8px 8px;
 }
@@ -98,7 +100,8 @@ th {
     padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 150px;
 }
 
 .score, .team-name {
@@ -112,11 +115,11 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 25%;
 }
 
 .date-stadium {
-    width: 60%;
+    width: 65%;
 }
 
 .score{
