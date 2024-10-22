@@ -1,27 +1,51 @@
 <div class="header__container">
-    <a href="tabla-torneo.html"><img class="header__logo" src="../Fotos/file.png" alt="Logo de la web football tables"></a>
-    <a href="tabla-torneo.html"><h1>BORDE INTERNO</h1></a>
+    <div class="header__logo">
+        <a href="tabla-torneo.html">
+            <h1>BORDE INTERNO</h1>
+        </a>
+    </div>
+
+    <!-- <nav class="header__navbar"> -->
+    <input type="checkbox" id="open-menu" class="header__navbar-checkbox">
+    <label for="open-menu" class="header__open-nav-button" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="header__navbar">
+        <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+                <a id="lpfa" class="header__navbar-link" href="tabla-torneo.html?liga=lpfa">Liga Argentina</a>
+            </li>
+            <li class="header__navbar-item">
+                <a id="premier" class="header__navbar-link" href="tabla-torneo.html?liga=pl">Premier League</a>
+            </li>
+            <li class="header__navbar-item">
+                <a id="seriea" class="header__navbar-link" href="tabla-torneo.html?liga=sa">Serie A Italia</a>
+            </li>
+            <li class="header__navbar-item">
+                <a id="laliga" class="header__navbar-link" href="tabla-torneo.html?liga=ll">La Liga</a>
+            </li>
+            <li class="header__navbar-item">
+                <a id="bundesliga" class="header__navbar-link" href="tabla-torneo.html?liga=bl">Bundesliga</a>
+            </li>
+            <li class="header__navbar-item" id="last-item">
+                <a id="primerab" class="header__navbar-link" href="tabla-torneo.html?liga=pb">Primera B Nacional</a>
+            </li>
+            <li class="header__navbar-item">
+                <div class="header__items-divisor"></div>
+            </li>
+            <li class="header__navbar-item">
+                <button class="header__navbar-button" id="myBtn">Sobre nosotros</button>
+            </li>
+            <li class="header__navbar-item">
+                <a href="#contactos" class="header__navbar-link" id="contact-button"><i
+                        class="fa fa-fw fa-envelope"></i>Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- </nav> -->
 </div>
-
-<nav class="sidenav" id="sidenav">
-    <ul>
-        <li><button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a></li>
-        <li><a id="lpfa" href="tabla-torneo.html?liga=lpfa">Liga Argentina</a></li>
-        <li><a id="premier" href="tabla-torneo.html?liga=pl">Premier League</a></li>
-        <li><a id="seriea" href="tabla-torneo.html?liga=sa">Serie A Italia</a></li>
-        <li><a id="laliga" href="tabla-torneo.html?liga=ll">La Liga</a></li>
-        <li><a id="bundesliga" href="tabla-torneo.html?liga=bl">Bundesliga</a></li>
-        <li><a id="primerab" href="tabla-torneo.html?liga=pb">Primera B Nacional</a></li>
-    </ul>
-</nav>
-
-<nav class="navbar" id="navbar">
-    <ul>
-        <li id="itemMenu"><button class="menu" type="button" onclick="openNav()"><i class="fa fa-bars"></i></button></li>
-        <li><button class="menu" id="myBtn">SOBRE NOSOTROS</button></li>
-        <li><a href="#contactos"><i class="fa fa-fw fa-envelope"></i>CONTACTANOS</a></li>
-    </ul>
-</nav>
 
 <div id="myModal" class="modal">
 

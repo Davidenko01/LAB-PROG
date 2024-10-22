@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
         await cargarHeader();
         configurarNavbar();
-        configurarSideNav();
         configurarModal();
     } catch (error) {
         console.error('Error durante la carga:', error);
@@ -36,34 +35,36 @@ async function cargarFooter() {
     document.querySelector('footer').innerHTML = data;
 }
 
-function configurarNavbar() {
-    const navbar = document.getElementById("navbar");
-    if (navbar) {
-        const sticky = navbar.offsetTop;
+// ------------------- NAV-BAR -------------------
 
-        window.onscroll = function() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        };
-    }
+function configurarNavbar() {
+    var aboutUsBtn = document.getElementById('myBtn');
+    var contactBtn = document.getElementById('contact-button');
+
+    aboutUsBtn.addEventListener("click", () => {
+        document.getElementById('open-menu').checked = false;
+    });
+
+    contactBtn.addEventListener("click", () => {
+        document.getElementById('open-menu').checked = false;
+    });
+
+    enlaceActual();
 }
 
-function configurarSideNav() {
+function enlaceActual() {
     const urlParams = new URLSearchParams(window.location.search);
     const liga = urlParams.get('liga');
-    let anchor;
+    let currentLink;
     switch (liga) {
-        case 'pl': anchor = document.getElementById('premier'); break;
-        case 'sa': anchor = document.getElementById('seriea'); break;
-        case 'll': anchor = document.getElementById('laliga'); break;
-        case 'bl': anchor = document.getElementById('bundesliga'); break;
-        case 'pb': anchor = document.getElementById('primerab'); break;
-        default: anchor = document.getElementById('lpfa'); break;
+        case 'pl': currentLink = document.getElementById('premier'); break;
+        case 'sa': currentLink = document.getElementById('seriea'); break;
+        case 'll': currentLink = document.getElementById('laliga'); break;
+        case 'bl': currentLink = document.getElementById('bundesliga'); break;
+        case 'pb': currentLink = document.getElementById('primerab'); break;
+        default: currentLink = document.getElementById('lpfa'); break;
     }
-    anchor.className = "active";
+    currentLink.classList.add("header__navbar-link--active");
 }
 
 function configurarModal() {
@@ -88,3 +89,5 @@ function configurarModal() {
         }
     }
 }
+
+// ----------------- FIN-NAV-BAR -----------------

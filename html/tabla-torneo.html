@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./Fotos/file.png" type="image/x-icon" sizes="16x16">
 
-  <script defer type="module" src = "../scripts/carga-header-footer.js"></script>
+  <script defer type="module" src="../scripts/carga-header-footer.js"></script>
   <script defer src="../scripts/codigo-table-header.js"></script>
   <script defer src="../scripts/link-activo.js"></script>
   <script defer src="../scripts/codigo-tabla.js"></script>
@@ -22,8 +22,11 @@
 
 <body>
 
-  <header class="header"></header>
+  <header class="header">
+  </header>
+
   <div id="overlay"></div>
+
   <main>
     <div class="table-header">
       <div class="table-header__container">
@@ -34,14 +37,14 @@
       <!-- <script src="codigo-table-header.js"></script> -->
       <nav class="table-header__nav-bar">
         <ul class="table-header__list">
-          <li class="table-header__item">
+          <li class="table-header__nav-item">
             <a class="table-header__link table-header__link--active" href="#">tabla</a>
           </li>
-          <li class="table-header__item">
+          <li class="table-header__nav-item">
             <a class="table-header__link" href="#"
               aria-label="enlace que dirige a la seccion de resultados">resultados</a>
           </li>
-          <li class="table-header__item">
+          <li class="table-header__nav-item">
             <a class="table-header__link" href="#"
               aria-label="enlace que dirige a la seccion de proximos partidos">proximos
               partidos</a>
@@ -75,7 +78,7 @@
     function openNav() {
       var sidenav = document.getElementById("sidenav");
       sidenav.classList.add("open");
-      document.getElementById("overlay").style.display = "block"; 
+      document.getElementById("overlay").style.display = "block";
     }
 
     function closeNav() {

@@ -22,108 +22,249 @@ footer {
 }
 
 main {
-  margin: 80px 0
+  margin: 120px 0
 }
 
 /* -------------------- HEADER -------------------- */
-
 .header {
-  background-color: rgba(0, 0, 0, 0.8);
-  /* margin-bottom: 80px;  */
+  background-color: #111;
   color: #eee;
+  margin-top: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #0005;
-  gap: 10px;
-  padding: 15px;
-
+  /* margin: auto; */
+  position: relative;
+  z-index: 10;
 }
 
 .header__logo {
-  width: 70px;
-  margin-left: 10px;
-  object-fit: cover;
-  background-color: #eee;
-  border-radius: 15px;
+  display: inline-block;
+  background-color: #04AA6D;
+  padding: 10px 35px;
+  clip-path: polygon(10% 0, 95% 0, 90% 100%, 5% 100%);
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
 }
 
-.header a {
-  text-decoration: none;
+.header__logo a {
   color: inherit;
+  text-decoration: none;
 }
+
+.header__logo:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.4);
+}
+
+.header__logo:active {
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
 
 h1 {
-  font-size: 28px;
-  text-transform: capitalize;
+  font-size: clamp(18px, 3vw, 22px);
   font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-/* ------------ NAV-BAR(sticky) ------------ */
-
-.navbar {
-  position: relative;
-  width: 100%;
-  color: white;
+/* ------------ NAV-BAR ------------ */
+.header__navbar-checkbox {
+  display: none;
 }
 
-.nav-bar a,
-.nav-bar button {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-bar ul {
-  list-style: none;
-}
-
-.navbar.sticky {
-  top: 0;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-}
-
-.navbar a,
-.navbar button,
-.sidenav button {
-
+.header__navbar-checkbox:checked~.header__navbar {
   display: block;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
+  /* display: flex; */
 }
 
-.navbar ul {
-  list-style: none;
+.header__navbar {
+  display: none;
+  background-color: #111;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 100%;
+  right: 0;
+  /* border-top: 1px solid #777 ; */
+  z-index: -1;
+}
+
+.header__navbar-list {
   display: flex;
-  margin-left: 25px;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 100px;
+  gap: 10px;
 }
 
-.menu {
-  background-color: transparent;
+.header__navbar-link,
+.header__navbar-button {
+  color: inherit;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 17px;
+  white-space: nowrap;
+  padding: 12px;
+  /* transition: transform 0.2s ease; */
+}
+
+.header__navbar-button {
   border: none;
-}
-
-/* Navbar links on mouse-over */
-.navbar a:hover,
-.navbar button:hover {
-  background-color: rgba(255, 255, 255, 0.457);
+  background-color: transparent;
   cursor: pointer;
 }
 
-/* Current/active navbar link */
-.active {
-  background-color: #04AA6D;
+.header__navbar-link {
+  display: inline-block;
+  text-decoration: none;
 }
 
-span {
-  font-size: 30px;
+.header__items-divisor {
+  background-color: #777;
+  height: 1px;
+  width: 50vw;
+  margin: 30px;
+}
+
+/* --- LINK-TRANSITION --- */
+
+.header__navbar-list:hover .header__navbar-link,
+.header__navbar-list:hover .header__navbar-button {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.header__navbar-item .header__navbar-link:hover,
+.header__navbar-item .header__navbar-button:hover {
+  opacity: 1;
+}
+
+#contact-button,
+#myBtn {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 50px;
+  padding: 6px 12px;
+  margin: 5px 0;
+}
+
+#contact-button:hover,
+#myBtn:hover {
+  border-radius: 20px;
+}
+
+/* --- CURRENT-LINK --- */
+
+.header__navbar-link--active {
+  position: relative;
+  color: orange;
+}
+
+.header__navbar-link--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+
+/* ---- MENU/CLOSE-BUTTON ---- */
+
+.header__open-nav-button {
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  height: 20px;
+  gap: 5px;
+  position: absolute;
+  right: 20px;
   cursor: pointer;
+  justify-content: center;
+}
+
+.header__open-nav-button span {
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  transition: all 0.3s ease;
+}
+
+/* Animación al hacer clic */
+.header__navbar-checkbox:checked+.header__open-nav-button span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header__navbar-checkbox:checked+.header__open-nav-button span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__navbar-checkbox:checked+.header__open-nav-button span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* -------- MEDIA-QUERIES -------- */
+
+@media screen and (min-width: 1095px) {
+
+  .header__container {
+    overflow-x: hidden;
+    padding: 0 50px 0 45px
+  }
+
+  .header__navbar {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .header__navbar-list {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  #last-item {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .header__open-nav-button {
+    display: none;
+  }
+
+  .header__items-divisor {
+    display: none;
+  }
+
+  #contact-button,
+  #myBtn {
+    margin: 0;
+  }
+
+  .header__navbar-link--active {
+    color: inherit;
+  }
+  
+  .header__navbar-link--active::after {
+    bottom: -1px;
+  }
 }
 
 /* ---------- FIN-NAV-BAR ---------- */
@@ -133,7 +274,7 @@ span {
 
 .footer {
   margin-top: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #111;
   font-size: 13px;
   color: #eee;
 
@@ -175,6 +316,10 @@ span {
   padding: 10px;
   text-align: center;
   border-top: 1px solid #0007;
+}
+
+.footer__list .footer__item:last-child .footer__link {
+  margin-bottom: 0;
 }
 
 /* --------- VENTANAS-MODAL --------- */
