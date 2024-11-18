@@ -1,4 +1,5 @@
 {
+    "dir": "Fotos/primeradivision",
     "positions": [
         {
             "team": "V\u00e9lez",
@@ -119,7 +120,6 @@
             "gc": 12,
             "dif": 2,
             "icon": "riestra.png"
-
         },
         {
             "team": "Gimnasia (LP)",
@@ -337,5 +337,9 @@
             "dif": -14,
             "icon": "barracas.png"
         }
-    ]
+    ],
+    "info": {
+        "imgSrc": "../Fotos/logo_lpfa.png",
+        "title": "Primera División de Fútbol"
+    }
 }

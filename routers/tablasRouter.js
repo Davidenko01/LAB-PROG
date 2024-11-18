@@ -1,42 +1,15 @@
 const express = require('express');
-
-const lpfa = require('../json/liga_argentina_posiciones.json');
-const premier= require('../json/premier-league.json');
-const seriea= require('../json/serie-A.json');
-const laliga  = require('../json/la-liga.json');
-const bundesliga = require('../json/bundesliga.json');
-const primerab = require('../json/primera-b.json');
-const {ligas} = require('../json/ligas-info.json');
+const tablasController = require('../controllers/tablasController');
 
 const routerTablas = express.Router();
 
 //Middleware
-routerTablas.use(express.json());
+// routerTablas.use(express.json());
 
-routerTablas.get('/header', (req, res) => {
-  const liga = req.query.liga;
-  const resultados = ligas.filter(element => element.liga === liga);
-  
-  if (resultados.length === 0) {
-    return res.status(400).json({ error: 'Liga no válida' });
-  }
-  res.json(resultados[0]);
-});
+routerTablas.get('/header', tablasController.getHeaderData);
 
-routerTablas.get('/', (req, res) => {
-  const liga = req.query.liga;
-  let ligaSelect;
-  switch (liga) {
-    case 'lpfa': ligaSelect = lpfa; break;
-    case 'pl': ligaSelect = premier; break;
-    case 'sa': ligaSelect = seriea; break;
-    case 'll': ligaSelect = laliga; break;
-    case 'bl': ligaSelect = bundesliga; break;
-    case 'pb': ligaSelect = primerab; break;
-    default: return res.status(400).json({ error: 'Liga no válida' });
-  }
-  res.json(ligaSelect);
-});
+routerTablas.get('/', tablasController.getTableData);
+
 /*
 routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
   const lenguaje = req.params.lenguaje;

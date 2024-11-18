@@ -240,6 +240,10 @@
         "dif": -10,
         "icon":"wolves.png"
       }
-    ]
+    ],
+    "info": {
+      "imgSrc": "../Fotos/logo_pl.png",
+      "title": "Premier League"
+    }
   }
   

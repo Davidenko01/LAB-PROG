@@ -1,6 +1,7 @@
+const path = require('path');
 const express = require('express');
-const routerTablas = require('./routers/tablas.js');
-//const routerPartidos = require('./routers/partidos.js');
+const routerTablas = require('./routers/tablasRouter.js');
+// const routerPartidos = require('./routers/partidos.js');
 
 const app = express();
 
@@ -11,6 +12,10 @@ app.use('/api/tablas', routerTablas);
 // app.use('/api/partidos', routerPartidos);
 
 //Routing
+app.get('/', (req, res) => {
+  res.redirect('/html/tabla-torneo.html?liga=lpfa');
+});
+
 app.get('/api', (req, res) => {
   res.send('Primer server con EXPRESS!');
 });

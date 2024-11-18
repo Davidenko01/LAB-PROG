@@ -10,7 +10,7 @@
       "gf": 20,
       "gc": 7,
       "dif": 13,
-      "icon":"bayernmunchen.png"
+      "icon": "bayernmunchen.png"
     },
     {
       "team": "RB Leipzig",
@@ -22,7 +22,7 @@
       "gf": 19,
       "gc": 7,
       "dif": 12,
-      "icon":"rbleipzig.png"
+      "icon": "rbleipzig.png"
     },
     {
       "team": "Eintracht Frankfurt",
@@ -34,7 +34,7 @@
       "gf": 12,
       "gc": 6,
       "dif": 6,
-      "icon":"eintrachtfrankfurt.png"
+      "icon": "eintrachtfrankfurt.png"
     },
     {
       "team": "SC Friburgo",
@@ -46,7 +46,7 @@
       "gf": 12,
       "gc": 6,
       "dif": 6,
-      "icon":"freiburg.png"
+      "icon": "freiburg.png"
     },
     {
       "team": "Bayer Leverkusen",
@@ -58,7 +58,7 @@
       "gf": 9,
       "gc": 6,
       "dif": 3,
-      "icon":"bayerleverkusen.png"
+      "icon": "bayerleverkusen.png"
     },
     {
       "team": "Union Berlin",
@@ -70,7 +70,7 @@
       "gf": 8,
       "gc": 6,
       "dif": 2,
-      "icon":"unionberlin.png"
+      "icon": "unionberlin.png"
     },
     {
       "team": "Borussia Dortmund",
@@ -82,7 +82,7 @@
       "gf": 12,
       "gc": 8,
       "dif": 4,
-      "icon":"borussiadortmund.png"
+      "icon": "borussiadortmund.png"
     },
     {
       "team": "Stuttgart",
@@ -94,7 +94,7 @@
       "gf": 15,
       "gc": 11,
       "dif": 4,
-      "icon":"stuttgart.png"
+      "icon": "stuttgart.png"
     },
     {
       "team": "Heidenheim",
@@ -106,7 +106,7 @@
       "gf": 12,
       "gc": 11,
       "dif": 1,
-      "icon":"heidenheim.png"
+      "icon": "heidenheim.png"
     },
     {
       "team": "FSV Mainz",
@@ -118,7 +118,7 @@
       "gf": 10,
       "gc": 9,
       "dif": 1,
-      "icon":"mainz05.png"
+      "icon": "mainz05.png"
     },
     {
       "team": "Werder Bremen",
@@ -130,7 +130,7 @@
       "gf": 8,
       "gc": 6,
       "dif": 2,
-      "icon":"werderbremen.png"
+      "icon": "werderbremen.png"
     },
     {
       "team": "VfL Wolfsburgo",
@@ -142,7 +142,7 @@
       "gf": 7,
       "gc": 9,
       "dif": -2,
-      "icon":"wolfsburg.png"
+      "icon": "wolfsburg.png"
     },
     {
       "team": "FC Augsburg",
@@ -154,7 +154,7 @@
       "gf": 8,
       "gc": 16,
       "dif": -8,
-      "icon":"augsburgo.png"
+      "icon": "augsburgo.png"
     },
     {
       "team": "M'gladbach",
@@ -166,7 +166,7 @@
       "gf": 12,
       "gc": 12,
       "dif": 0,
-      "icon":"bmonchengladbach.png"
+      "icon": "bmonchengladbach.png"
     },
     {
       "team": "St. Pauli",
@@ -178,7 +178,7 @@
       "gf": 8,
       "gc": 9,
       "dif": -1,
-      "icon":"st_pauli.png"
+      "icon": "st_pauli.png"
     },
     {
       "team": "TSG Hoffenheim",
@@ -190,7 +190,7 @@
       "gf": 8,
       "gc": 16,
       "dif": -8,
-      "icon":"hoffenheim.png"
+      "icon": "hoffenheim.png"
     },
     {
       "team": "Holstein Kiel",
@@ -202,7 +202,7 @@
       "gf": 9,
       "gc": 19,
       "dif": -10,
-      "icon":"holstein_kiel.png"
+      "icon": "holstein_kiel.png"
     },
     {
       "team": "VfL Bochum",
@@ -214,7 +214,11 @@
       "gf": 6,
       "gc": 14,
       "dif": -8,
-      "icon":"bochum.png"
+      "icon": "bochum.png"
     }
-  ]
+  ],
+  "info": {
+    "imgSrc": "../Fotos/logo_bl.png",
+    "title": "Bundesliga"
+  }
 }

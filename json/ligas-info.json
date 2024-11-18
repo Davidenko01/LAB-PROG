@@ -1,28 +1,30 @@
 {
-    "pl": {
-        "imgSrc": "../Fotos/logo_pl.png",
-        "title": "Premier League"
+    "ligas": [
+        {
+            "liga": "pl",
+            "imgSrc": "../Fotos/logo_pl.png",
+            "title": "Premier League"
 
-    },
-    "lpfa": {
-        "imgSrc": "../Fotos/logo_lpfa.png",
-        "title": "Primera División de Fútbol"
-    },
-    "bl": {
-        "imgSrc": "../Fotos/logo_bl.png",
-        "title": "Bundesliga"
-    },
-    "ll": {
-        "imgSrc": "../Fotos/logo_ll.png",
-        "title": "LaLiga"
-    },
-    "sa": {
-        "imgSrc": "../Fotos/logo_sa.png",
-        "title": "Serie A"
-    },
-    "pb": {
-        "imgSrc": "../Fotos/logo_pb.png",
-        "title": "Primera B Nacional"
-    }
-
+        },{
+            "liga": "lpfa",
+            "imgSrc": "../Fotos/logo_lpfa.png",
+            "title": "Primera División de Fútbol"
+        },{
+            "liga": "bl",
+            "imgSrc": "../Fotos/logo_bl.png",
+            "title": "Bundesliga"
+        },{
+            "liga": "ll",
+            "imgSrc": "../Fotos/logo_ll.png",
+            "title": "LaLiga"
+        },{
+            "liga": "sa",
+            "imgSrc": "../Fotos/logo_sa.png",
+            "title": "Serie A"
+        },{
+            "liga": "pb",
+            "imgSrc": "../Fotos/logo_pb.png",
+            "title": "Primera B Nacional"
+        }
+  ]
 }

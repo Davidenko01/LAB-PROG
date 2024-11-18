@@ -55,3 +55,4 @@ function crearTablaPosiciones(liga) {
 const urlParams = new URLSearchParams(window.location.search);
 const liga = urlParams.get('liga');
 crearTablaPosiciones(liga);
+
