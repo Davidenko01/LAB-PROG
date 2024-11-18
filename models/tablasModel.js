@@ -4,11 +4,6 @@ const seriea = require('../json/serie-A.json');
 const laliga = require('../json/la-liga.json');
 const bundesliga = require('../json/bundesliga.json');
 const primerab = require('../json/primera-b.json');
-const { ligas } = require('../json/ligas-info.json');
-
-const getLigasInfo = (liga) => {
-    return ligas.filter(element => element.liga === liga);;
-};
 
 const getLigaDataById = (liga) => {
     switch (liga) {
@@ -22,4 +17,4 @@ const getLigaDataById = (liga) => {
     }
 };
 
-module.exports = { getLigasInfo, getLigaDataById };
+module.exports = { getLigaDataById };

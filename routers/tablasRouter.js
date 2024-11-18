@@ -6,8 +6,6 @@ const routerTablas = express.Router();
 //Middleware
 // routerTablas.use(express.json());
 
-routerTablas.get('/header', tablasController.getHeaderData);
-
 routerTablas.get('/', tablasController.getTableData);
 
 /*

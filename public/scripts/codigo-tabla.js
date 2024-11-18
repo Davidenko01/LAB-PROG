@@ -2,6 +2,14 @@ function crearTablaPosiciones(liga) {
     fetch(`/api/tablas?liga=${liga}`)
         .then(response => response.json())
         .then(data => {
+            const imgElement = document.getElementById('table-header__img');
+            const titleElement = document.getElementById('table-header__title');
+            const infoElement = document.getElementById('table-header__info');
+
+            imgElement.src = data.info.imgSrc;
+            titleElement.textContent = data.info.title;
+            infoElement.textContent = (String)(new Date().getFullYear()); 
+
             const tabla = document.getElementById('body-table');
             const directorio= data.dir; //Obtenemos directorio correspondiente a la liga
             data.positions.forEach((equipo, index) => {
