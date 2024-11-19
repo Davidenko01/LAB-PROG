@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const routerTablas = require('./routers/tablasRouter.js');
-// const routerPartidos = require('./routers/partidos.js');
+const routerPartidos = require('./routers/partidosRouter.js');
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 //ROUTERS
 app.use('/api/tablas', routerTablas);
-// app.use('/api/partidos', routerPartidos);
+app.use('/api/partidos', routerPartidos);
 
 //Routing
 app.get('/', (req, res) => {

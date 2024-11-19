@@ -1,9 +1,8 @@
 const express = require('express');
 
-// const routerPartidos = express.Router();
-// const controllerPartidos = require('../controllers/partidos');
-// const partidos = require('../json/partidos.json');
+const routerPartidos = express.Router();
+const controllerPartidos = require('../controllers/partidosController');
 
-// routerPartidos.get('/', (req, res) => {
+routerPartidos.get('/', controllerPartidos.getMatchesData);
     
-// });
+module.exports = routerPartidos;

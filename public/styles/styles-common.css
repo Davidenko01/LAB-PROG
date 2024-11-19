@@ -6,9 +6,9 @@
 }
 
 body {
-  /* background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
+  background-image: url("https://img.freepik.com/free-vector/football-green-grass-stadium-texture-top-view_107791-20406.jpg?w=1380&t=st=1726769880~exp=1726770480~hmac=c3eecd48f48a138bf719ad242fb1cf7b29448f07de46c23f168304219957da05");
   background-size: cover;
-  background-repeat: round; */
+  background-repeat: round;
   display: flex;
   flex-direction: column;
   align-items: start;
