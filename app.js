@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 const express = require('express');
 const routerTablas = require('./routers/tablasRouter.js');
 const routerPartidos = require('./routers/partidosRouter.js');

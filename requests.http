@@ -1,0 +1,20 @@
+###Crear nuevo partido
+POST http://localhost:3000/api/partidos?liga=lpfa&equipo=Central%20Córdoba%20(SdE)
+Content-Type: application/json
+
+{
+  "opponent": "River Plate",
+  "team_score":  1,
+  "opponent_score": 2,
+  "date": "Sunday, August 27, 2025 7:30 PM",
+  "stadium": "Estadio Tomás Adolfo Ducó"
+}
+
+###Modificar partido
+PATCH http://localhost:3000/api/partidos?liga=lpfa&equipo=Vélez&date=30/09/24
+Content-Type: application/json
+
+{
+  "team_score":  54,
+  "opponent_score": 78
+}
