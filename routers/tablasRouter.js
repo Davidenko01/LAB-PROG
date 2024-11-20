@@ -8,5 +8,6 @@ const routerTablas = express.Router();
 
 routerTablas.get('/', tablasController.getTableData);
 
+routerTablas.get('/:liga', tablasController.getCantidad);
 
 module.exports = routerTablas;
