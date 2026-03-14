@@ -1,12 +1,11 @@
 const { getLigaDataById } = require('../models/tablasModel');
 
-const getTableData = (req, res) => {
+const getTableData = async (req, res) => {
   const liga = req.query.liga;
-  const ligaData = getLigaDataById(liga);
   if (!liga) {
     return res.status(400).json({ error: 'Parametro liga no especificado' });
   }
-
+  const ligaData = await getLigaDataById(liga);
   if (!ligaData) {
     return res.status(400).json({ error: 'Liga no válida' });
   }

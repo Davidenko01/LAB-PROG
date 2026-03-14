@@ -1,25 +1,26 @@
 const { match } = require('assert');
 const partidosModel = require('../models/partidosModel');
 
-const getMatchesData = (req, res) => {
+const getMatchesData = async (req, res) => {
   const liga = req.query.liga;
   const team = req.query.equipo;
+
   if (!liga || !team) {
     return res.status(400).send({ error: 'Faltan parámetros: liga y/o equipo.' });
   }
-  const matchesData = partidosModel.getPartidosDataByLiga(liga);
-  if (!matchesData) {
-    return res.status(404).send({ error: 'Liga no válida o no encontrada' });
+
+  try {
+    const matchesData = await partidosModel.getPartidosDataByLiga(liga, team);
+
+    if (!matchesData) {
+      return res.status(404).send({ error: 'Liga o equipo no válidos' });
+    }
+
+    res.send(matchesData);
+  } catch (error) {
+    console.error('Error al obtener partidos:', error.message);
+    res.status(500).send({ error: 'Error interno del servidor' });
   }
-  const equipo = partidosModel.getTeamById(team, matchesData.teams);
-  if (!equipo) {
-    return res.status(404).send({ error: `No se encontró ese equipo.` });
-  }
-  const equipoSelect = {
-    ...equipo,
-    dir: matchesData.dir
-  };
-  res.send(equipoSelect);
 };
 
 const createMatch = (req, res) => {

@@ -1,19 +1,32 @@
-const lpfa = require('../json/liga_argentina_posiciones.json');
-const premier = require('../json/premier-league.json');
-const seriea = require('../json/serie-A.json');
-const laliga = require('../json/la-liga.json');
-const bundesliga = require('../json/bundesliga.json');
-const primerab = require('../json/primera-b.json');
+const axios = require('axios');
+require('dotenv').config();
 
-const getLigaDataById = (liga) => {
-    switch (liga) {
-        case 'lpfa': return lpfa;
-        case 'pl': return premier;
-        case 'sa': return seriea;
-        case 'll': return laliga;
-        case 'bl': return bundesliga;
-        case 'pb': return primerab;
-        default: return null;
+const API_KEY = process.env.API_KEY;
+const BASE_URL = "https://api.football-data.org/v4/competitions";
+
+const getLigaDataById = async (liga) => {
+    if (!liga) return null;
+
+    try {
+        const { data } = await axios.get(`${BASE_URL}/${liga}/standings`, {
+            headers: { 'X-Auth-Token': API_KEY },
+        });
+
+        const competition = data?.competition;
+        const tabla = data?.standings?.[0]?.table;
+
+        if (!competition?.id || !competition?.name || !competition?.emblem || !tabla) {
+            console.warn("Respuesta inesperada:", JSON.stringify(data));
+            return null;
+        }
+
+        const { id, name, emblem } = competition;
+
+        return { id, name, emblem, tabla };
+
+    } catch (error) {
+        console.error(`Error al obtener datos de la liga ${liga}:`, error.message);
+        return null;
     }
 };
 

@@ -5,16 +5,59 @@ const lpfaData = require('../json/partidoslpfa.json');
 //const bundesliga = require('../json/bundesliga.json');
 //const primerab = require('../json/primera-b.json');
 
-const getPartidosDataByLiga = (liga) => {
-    switch (liga) {
-        case 'lpfa': return lpfaData;
-        case 'pl': return null;
-        case 'sa': return null;
-        case 'll': return null;
-        case 'bl': return null;
-        case 'pb': return null;
-        default: return null;
-    }
+const axios = require('axios');
+require('dotenv').config();
+
+const API_KEY = process.env.API_KEY;
+const BASE_URL = "https://api.football-data.org/v4";
+
+const getPartidosDataByLiga = async (liga, equipo) => {
+  try {
+    if (!liga || !equipo) return null;
+
+    const { data: teamData } = await axios.get(`${BASE_URL}/teams/${equipo}`, {
+      headers: { 'X-Auth-Token': API_KEY },
+    });
+
+    const team = teamData.name;
+
+    const { data: competitionData } = await axios.get(`${BASE_URL}/competitions/${liga}`, {
+      headers: { 'X-Auth-Token': API_KEY },
+    });
+
+    const competition = competitionData.name;
+
+    const { data: matchesData } = await axios.get(`${BASE_URL}/teams/${equipo}/matches`, {
+      headers: { 'X-Auth-Token': API_KEY },
+      params: { competitions: liga },
+    });
+
+    const matches = matchesData.matches.map((match) => ({
+      date: match.utcDate,
+      id: match.id,
+      homeTeam: {
+        id: match.homeTeam.id,
+        shortName: match.homeTeam.shortName,
+        crest: match.homeTeam.crest,
+      },
+      awayTeam: {
+        id: match.awayTeam.id,
+        shortName: match.awayTeam.shortName,
+        crest: match.awayTeam.crest,
+      },
+      score: {
+        home: match.score.fullTime.home,
+        away: match.score.fullTime.away,
+        winner: match.score.winner,
+      },
+    }));
+
+    return { team, competition, matches };
+
+  } catch (error) {
+    console.error(`Error al obtener datos:`, error.message);
+    return null;
+  }
 };
 
 const getTeamById = (equipo, array) => {
