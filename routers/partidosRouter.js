@@ -10,5 +10,7 @@ routerPartidos.post('/', controllerPartidos.createMatch);
 routerPartidos.patch('/', controllerPartidos.updateMatch);
 routerPartidos.get('/proximos', controllerPartidos.getProximosPartidos);
 routerPartidos.post('/proximos', controllerPartidos.crearProximoPartido);
+routerPartidos.get('/proximos/ligas', controllerPartidos.getLigas);
+routerPartidos.get('/proximos/equipos', controllerPartidos.getEquiposByLiga);
 
 module.exports = routerPartidos;

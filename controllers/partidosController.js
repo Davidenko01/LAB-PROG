@@ -150,4 +150,22 @@ const crearProximoPartido = (req, res) => {
   res.status(201).json({ message: 'Partido creado', partido: resultado.partido });
 };
 
-module.exports = { getMatchesData, createMatch, updateMatch, getProximosPartidos, crearProximoPartido };
+const getLigas = (req, res) => {
+  const datos = partidosModel.leerPartidos();
+  const ligas = datos.ligas.map(l => ({
+    id: l.liga_id,
+    name: l.nombre,
+    logo: l.logo,
+  }));
+  res.json(ligas);
+};
+
+const getEquiposByLiga = (req, res) => {
+  const { liga_id } = req.query;
+  const datos = partidosModel.leerPartidos();
+  const liga = datos.ligas.find(l => l.liga_id === Number(liga_id));
+  if (!liga) return res.status(404).json({ error: 'Liga no encontrada' });
+  res.json(liga.equipos);
+};
+
+module.exports = { getMatchesData, createMatch, updateMatch, getProximosPartidos, crearProximoPartido, getLigas, getEquiposByLiga };
