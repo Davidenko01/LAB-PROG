@@ -11,6 +11,11 @@ require('dotenv').config();
 const API_KEY = process.env.API_KEY;
 const BASE_URL = "https://api.football-data.org/v4";
 
+const fs = require('fs');
+const path = require('path');
+
+const PARTIDOS_PATH = path.join(__dirname, '../json/partidos.json');
+
 const getPartidosDataByLiga = async (liga, equipo) => {
   try {
     if (!liga || !equipo) return null;
@@ -99,4 +104,74 @@ const updateMatch = (newMatchData, equipo, date) => {
     return true;
 };
 
-module.exports = { getPartidosDataByLiga, getTeamById, createMatch, updateMatch };
+
+/* PARTE NUEVA DE LOS PROXIMOS PARTIDOS */
+const leerPartidos = () => {
+  const raw = fs.readFileSync(PARTIDOS_PATH, 'utf-8');
+  return JSON.parse(raw);
+};
+
+const guardarPartidos = (datos) => {
+  fs.writeFileSync(PARTIDOS_PATH, JSON.stringify(datos, null, 2));
+};
+
+const getProximosPartidos = (ligaId, equipoId) => {
+  const datos = leerPartidos();
+  const liga = datos.ligas.find(l => l.liga_id === Number(ligaId));
+  if (!liga) return null;
+
+  const partidos = liga.partidos.filter(p =>
+    p.equipo_local.id === Number(equipoId) ||
+    p.equipo_visitante.id === Number(equipoId)
+  );
+
+  return { liga: liga.nombre, logo: liga.logo, partidos };
+};
+
+const crearProximoPartido = (ligaId, equipoLocalId, equipoVisitanteId, fecha) => {
+  const datos = leerPartidos();
+
+  const liga = datos.ligas.find(l => l.liga_id === Number(ligaId));
+  if (!liga) return { ok: false, error: 'Liga no encontrada' };
+
+  const equipoLocal = liga.equipos.find(e => e.id === Number(equipoLocalId));
+  const equipoVisitante = liga.equipos.find(e => e.id === Number(equipoVisitanteId));
+
+  if (!equipoLocal || !equipoVisitante) {
+    return { ok: false, error: 'Uno o ambos equipos no pertenecen a esta liga' };
+  }
+
+  // ID autoincremental
+  const todosLosPartidos = datos.ligas.flatMap(l => l.partidos);
+  const maxId = todosLosPartidos.reduce((max, p) => Math.max(max, p.partido_id), 0);
+
+  const nuevoPartido = {
+    partido_id: maxId + 1,
+    fecha,
+    estado: 'programado',
+    equipo_local: {
+      id: equipoLocal.id,
+      nombre: equipoLocal.nombre,
+      escudo: equipoLocal.escudo,
+    },
+    equipo_visitante: {
+      id: equipoVisitante.id,
+      nombre: equipoVisitante.nombre,
+      escudo: equipoVisitante.escudo,
+    },
+  };
+
+  liga.partidos.push(nuevoPartido);
+  guardarPartidos(datos);
+
+  return { ok: true, partido: nuevoPartido };
+};
+
+module.exports = { 
+  getPartidosDataByLiga, 
+  getTeamById, 
+  createMatch, 
+  updateMatch,
+  getProximosPartidos,
+  crearProximoPartido,
+};

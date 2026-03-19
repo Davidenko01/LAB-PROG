@@ -127,23 +127,7 @@
           "escudo": "https://crests.football-data.org/bournemouth.png"
         }
       ],
-      "partidos": [
-        {
-          "partido_id": 1,
-          "fecha": "2026-04-01T20:00:00Z",
-          "estado": "programado",
-          "equipo_local": {
-            "id": 57,
-            "nombre": "Arsenal FC",
-            "escudo": "https://crests.football-data.org/57.png"
-          },
-          "equipo_visitante": {
-            "id": 65,
-            "nombre": "Manchester City FC",
-            "escudo": "https://crests.football-data.org/65.png"
-          }
-        }
-      ]
+      "partidos": []
     },
     {
       "liga_id": 2,

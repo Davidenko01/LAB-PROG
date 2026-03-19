@@ -120,6 +120,34 @@ const validateMatchData = (data) => {
   return { valid: true };
 };
 
+const getProximosPartidos = (req, res) => {
+  const { liga_id, equipo_id } = req.query;
 
+  if (!liga_id || !equipo_id) {
+    return res.status(400).json({ error: 'Faltan parámetros: liga_id y equipo_id' });
+  }
 
-module.exports = { getMatchesData, createMatch, updateMatch };
+  const resultado = partidosModel.getProximosPartidos(liga_id, equipo_id);
+  if (!resultado) return res.status(404).json({ error: 'Liga no encontrada' });
+
+  res.json(resultado);
+};
+
+const crearProximoPartido = (req, res) => {
+  const { liga_id, equipo_local_id, equipo_visitante_id, fecha } = req.body;
+
+  if (!liga_id || !equipo_local_id || !equipo_visitante_id || !fecha) {
+    return res.status(400).json({ error: 'Faltan campos requeridos' });
+  }
+
+  if (Number(equipo_local_id) === Number(equipo_visitante_id)) {
+    return res.status(400).json({ error: 'Los equipos no pueden ser iguales' });
+  }
+
+  const resultado = partidosModel.crearProximoPartido(liga_id, equipo_local_id, equipo_visitante_id, fecha);
+  if (!resultado.ok) return res.status(404).json({ error: resultado.error });
+
+  res.status(201).json({ message: 'Partido creado', partido: resultado.partido });
+};
+
+module.exports = { getMatchesData, createMatch, updateMatch, getProximosPartidos, crearProximoPartido };
