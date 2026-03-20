@@ -142,6 +142,51 @@
             "nombre": "Manchester City FC",
             "escudo": "https://crests.football-data.org/65.png"
           }
+        },
+        {
+          "partido_id": 2,
+          "fecha": "2026-04-01T20:00:00Z",
+          "estado": "programado",
+          "equipo_local": {
+            "id": 57,
+            "nombre": "Arsenal FC",
+            "escudo": "https://crests.football-data.org/57.png"
+          },
+          "equipo_visitante": {
+            "id": 65,
+            "nombre": "Manchester City FC",
+            "escudo": "https://crests.football-data.org/65.png"
+          }
+        },
+        {
+          "partido_id": 3,
+          "fecha": "2026-04-01T20:00:00Z",
+          "estado": "programado",
+          "equipo_local": {
+            "id": 57,
+            "nombre": "Arsenal FC",
+            "escudo": "https://crests.football-data.org/57.png"
+          },
+          "equipo_visitante": {
+            "id": 65,
+            "nombre": "Manchester City FC",
+            "escudo": "https://crests.football-data.org/65.png"
+          }
+        },
+        {
+          "partido_id": 4,
+          "fecha": "2026-04-01T20:00:00Z",
+          "estado": "programado",
+          "equipo_local": {
+            "id": 57,
+            "nombre": "Arsenal FC",
+            "escudo": "https://crests.football-data.org/57.png"
+          },
+          "equipo_visitante": {
+            "id": 65,
+            "nombre": "Manchester City FC",
+            "escudo": "https://crests.football-data.org/65.png"
+          }
         }
       ]
     },

@@ -174,4 +174,6 @@ module.exports = {
   updateMatch,
   getProximosPartidos,
   crearProximoPartido,
+  leerPartidos,
+  guardarPartidos,
 };

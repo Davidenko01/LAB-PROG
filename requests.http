@@ -1,2 +1,1 @@
-### Obtener próximos partidos de Arsenal
 GET http://localhost:3001/api/partidos/proximos?liga_id=1&equipo_id=57
