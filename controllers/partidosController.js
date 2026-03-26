@@ -190,6 +190,36 @@ const crearProximoPartido = (req, res) => {
     return res.status(400).json({ error: "Los equipos no pueden ser iguales" });
   }
 
+
+// Validación: ningún equipo puede tener ya un partido en esa fecha
+  const datos = partidosModel.leerPartidos();   //Se obtienen los partidos creados hasta el momento
+  const fechaNueva = new Date(fecha);  //Se utiliza la variable fechaNueva = fecha pasada por parámetro
+  fechaNueva.setHours(0, 0, 0, 0);
+
+  const hayConflicto = datos.ligas.some((liga) =>   //Recorre para los datos de la liga 
+    liga.partidos.some((partido) => {  //Recorre los partidos 
+      const fechaPartido = new Date(partido.fecha);  //variable fechaPartido = fecha del partido en json
+      fechaPartido.setHours(0, 0, 0, 0);
+
+      const mismaFecha = fechaPartido.getTime() === fechaNueva.getTime();  // si fechaNueva = fechaPartido 
+      const equipoInvolucrado =
+        //Compara si los equipos pasado por parametros tienen asociado un partido con la misma fecha 
+        Number(partido.equipo_local.id) === Number(equipo_local_id) ||   
+        Number(partido.equipo_local.id) === Number(equipo_visitante_id) ||
+        Number(partido.equipo_visitante.id) === Number(equipo_local_id) ||
+        Number(partido.equipo_visitante.id) === Number(equipo_visitante_id);
+
+      return mismaFecha && equipoInvolucrado;
+    })
+  );
+
+  if (hayConflicto) {  //verifica las condiciones de los partidos 
+    return res.status(400).json({
+      error: "Uno de los equipos ya tiene un partido programado en esa fecha.",
+    });
+  }
+
+
   const resultado = partidosModel.crearProximoPartido(
     liga_id,
     equipo_local_id,
