@@ -4,11 +4,11 @@ const partidosModel = require("../models/partidosModel");
 const getMatchesData = async (req, res) => {
   const liga = req.query.liga;
   const team = req.query.equipo;
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
 
   if (!liga || !team) {
-    return res
-      .status(400)
-      .send({ error: "Faltan parámetros: liga y/o equipo." });
+    return res.status(400).send({ error: "Faltan parámetros: liga y/o equipo." });
   }
 
   try {
@@ -18,7 +18,21 @@ const getMatchesData = async (req, res) => {
       return res.status(404).send({ error: "Liga o equipo no válidos" });
     }
 
-    res.send(matchesData);
+    const total = matchesData.matches.length;
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedMatches = matchesData.matches.slice(startIndex, endIndex);
+
+    res.send({
+      team: matchesData.team,
+      competition: matchesData.competition,
+      matches: paginatedMatches,
+      total,
+      page,
+      limit,
+      hasMore: endIndex < total,
+    });
+
   } catch (error) {
     console.error("Error al obtener partidos:", error.message);
     res.status(500).send({ error: "Error interno del servidor" });

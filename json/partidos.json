@@ -187,6 +187,21 @@
             "nombre": "Manchester City FC",
             "escudo": "https://crests.football-data.org/65.png"
           }
+        },
+        {
+          "partido_id": 5,
+          "fecha": "2026-04-08T21:16:00.000Z",
+          "estado": "programado",
+          "equipo_local": {
+            "id": 402,
+            "nombre": "Brentford FC",
+            "escudo": "https://crests.football-data.org/402.png"
+          },
+          "equipo_visitante": {
+            "id": 397,
+            "nombre": "Brighton & Hove Albion FC",
+            "escudo": "https://crests.football-data.org/397.png"
+          }
         }
       ]
     },
@@ -317,7 +332,23 @@
           "escudo": "https://crests.football-data.org/7397.png"
         }
       ],
-      "partidos": []
+      "partidos": [
+        {
+          "partido_id": 6,
+          "fecha": "2026-03-31T21:21:00.000Z",
+          "estado": "programado",
+          "equipo_local": {
+            "id": 98,
+            "nombre": "AC Milan",
+            "escudo": "https://crests.football-data.org/98.png"
+          },
+          "equipo_visitante": {
+            "id": 108,
+            "nombre": "FC Internazionale Milano",
+            "escudo": "https://crests.football-data.org/108.png"
+          }
+        }
+      ]
     },
     {
       "liga_id": 3,

@@ -16,9 +16,19 @@ const path = require('path');
 
 const PARTIDOS_PATH = path.join(__dirname, '../json/partidos.json');
 
+const cache = new Map();
+
 const getPartidosDataByLiga = async (liga, equipo) => {
   try {
     if (!liga || !equipo) return null;
+
+    const cacheKey = `${liga}-${equipo}`;
+
+    // Si ya está en cache, lo devuelve directo sin llamar a la API
+    if (cache.has(cacheKey)) {
+      console.log('Datos obtenidos desde cache');
+      return cache.get(cacheKey);
+    }
 
     const { data: teamData } = await axios.get(`${BASE_URL}/teams/${equipo}`, {
       headers: { 'X-Auth-Token': API_KEY },
@@ -37,27 +47,38 @@ const getPartidosDataByLiga = async (liga, equipo) => {
       params: { competitions: liga },
     });
 
-    const matches = matchesData.matches.map((match) => ({
-      date: match.utcDate,
-      id: match.id,
-      homeTeam: {
-        id: match.homeTeam.id,
-        shortName: match.homeTeam.shortName,
-        crest: match.homeTeam.crest,
-      },
-      awayTeam: {
-        id: match.awayTeam.id,
-        shortName: match.awayTeam.shortName,
-        crest: match.awayTeam.crest,
-      },
-      score: {
-        home: match.score.fullTime.home,
-        away: match.score.fullTime.away,
-        winner: match.score.winner,
-      },
-    }));
+    const now = new Date();
 
-    return { team, competition, matches };
+    const matches = matchesData.matches
+      .filter((match) => new Date(match.utcDate) < now)
+      .sort((a, b) => new Date(b.utcDate) - new Date(a.utcDate))
+      .map((match) => ({
+        date: match.utcDate,
+        id: match.id,
+        homeTeam: {
+          id: match.homeTeam.id,
+          shortName: match.homeTeam.shortName,
+          crest: match.homeTeam.crest,
+        },
+        awayTeam: {
+          id: match.awayTeam.id,
+          shortName: match.awayTeam.shortName,
+          crest: match.awayTeam.crest,
+        },
+        score: {
+          home: match.score.fullTime.home,
+          away: match.score.fullTime.away,
+          winner: match.score.winner,
+        },
+      }));
+
+    const result = { team, competition, matches };
+
+    // Guarda en cache por 5 minutos
+    cache.set(cacheKey, result);
+    setTimeout(() => cache.delete(cacheKey), 1000 * 60 * 5);
+
+    return result;
 
   } catch (error) {
     console.error(`Error al obtener datos:`, error.message);
